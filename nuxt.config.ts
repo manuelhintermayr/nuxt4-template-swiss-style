@@ -9,7 +9,7 @@ export default defineNuxtConfig({
 
   // Configuration for subfolder deployment
   app: {
-    baseURL: '/nuxt4-template/', // Change this to your desired subfolder name
+    baseURL: '/nuxt4-template-swiss-style/', // Change this to your desired subfolder name
     buildAssetsDir: '/_nuxt/', // Keep assets in _nuxt folder
     cdnURL: '' // Leave empty for relative paths
   },
