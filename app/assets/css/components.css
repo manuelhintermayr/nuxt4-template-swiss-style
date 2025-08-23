@@ -65,6 +65,37 @@
   font-weight: 700;
 }
 
+/* Avatare */
+.ui-avatar {
+  border: var(--border-w-thin) solid var(--c-fg) !important;
+  border-radius: 0 !important; /* Swiss Style: eckig */
+  background: var(--c-bg) !important;
+  color: var(--c-fg) !important;
+  font-weight: 700;
+}
+
+/* Falls Initialen statt Bild */
+.ui-avatar span {
+  text-transform: uppercase;
+}
+
+/* Accordion / Collapse */
+.ui-collapse, .ui-accordion {
+  border: var(--border-w) solid var(--c-fg) !important;
+  background: transparent !important;
+}
+
+.ui-collapse-header, .ui-accordion-header {
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: var(--rhythm-2);
+  border-bottom: var(--border-w-thin) solid var(--c-fg);
+}
+
+.ui-collapse-content, .ui-accordion-content {
+  padding: var(--rhythm-2);
+}
+
 /* Generic Swiss components */
 .swiss-card {
   border: var(--border-w) solid var(--c-fg);
