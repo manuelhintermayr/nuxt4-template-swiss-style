@@ -7,31 +7,30 @@
    ========================================================================== */
 :root {
   /* Typography */
-  --font-sans: Helvetica, Arial, ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans", sans-serif;
+  --font-sans: 'Helvetica Neue', Helvetica, Arial, ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans", sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 
   /* Core palette – strict black & white */
   --c-bg: #ffffff;
   --c-fg: #000000;
 
-  /* Border + shadow */
-  --border-w: 3px;
-  /* Swiss, clearly visible */
-  --border-w-thin: 2px;
-  --ring-w: 3px;
+  /* Border + shadow - Updated values */
+  --border-w: 2px;
+  --border-w-thin: 1px;
+  --ring-w: 2px;
 
-  /* Spacing rhythm (optional helpers) */
-  --rhythm-1: .5rem;
-  --rhythm-2: 1rem;
-  /* Swiss, clearly visible */
-  --rhythm-3: 1.5rem;
+  /* Spacing rhythm - Refined scale */
+  --rhythm-1: 0.25rem;
+  --rhythm-2: 0.5rem;
+  --rhythm-3: 1rem;
+  --rhythm-4: 2rem;
 
   /* Mouse Follower sizing */
   --mf-size: 48px;
 }
 
 /* Dark mode variables */
-:root.dark {
+.dark {
   --c-bg: #000000;
   --c-fg: #ffffff;
 }
@@ -46,7 +45,9 @@
     background: var(--c-bg);
     color: var(--c-fg);
     font-family: var(--font-sans);
-    letter-spacing: .01em;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -64,8 +65,9 @@
   h5,
   h6 {
     text-transform: uppercase;
-    font-weight: 800;
+    font-weight: 900;
     line-height: 1.05;
+    letter-spacing: -0.02em;
   }
 
   h1 {
@@ -87,7 +89,8 @@
   }
 
   a:hover {
-    text-decoration: underline;
+    background: var(--c-fg);
+    color: var(--c-bg);
   }
 
   /* Selection */

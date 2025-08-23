@@ -15,11 +15,12 @@ button,
   border: var(--btn-bw) solid var(--btn-fg);
   background: var(--btn-bg);
   color: var(--btn-fg);
-  padding: .55rem 1rem;
-  font-weight: 800;
+  padding: var(--rhythm-2) var(--rhythm-3);
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .02em;
   box-shadow: none !important;
+  border-radius: 0 !important;
 }
 
 /* Hover inverted */
@@ -50,8 +51,10 @@ textarea {
   border: var(--border-w-thin) solid var(--c-fg) !important;
   background: var(--c-bg) !important;
   color: var(--c-fg) !important;
-  padding: .55rem .7rem !important;
+  padding: var(--rhythm-2) !important;
+  font-weight: 500;
   box-shadow: none !important;
+  border-radius: 0 !important;
 }
 
 .ui-input:focus,
@@ -60,11 +63,23 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-  outline: var(--ring-w) solid var(--c-fg);
-  outline-offset: 2px;
+  outline: none;
+  border: var(--border-w) solid var(--c-fg) !important;
 }
 
-/* Checkbox/Radio – edgy */
+/* Switch / Checkbox / Radio */
+.ui-switch, .ui-checkbox, .ui-radio {
+  border: var(--border-w) solid var(--c-fg);
+  border-radius: 0 !important;
+  background: transparent;
+}
+
+.ui-switch-checked, .ui-checkbox-checked, .ui-radio-checked {
+  background: var(--c-fg);
+  color: var(--c-bg);
+}
+
+/* Legacy Checkbox/Radio – edgy */
 input[type="checkbox"],
 input[type="radio"] {
   width: 1.05rem;
@@ -143,4 +158,19 @@ input[type="range"]::-moz-range-thumb {
   height: 18px;
   border: var(--border-w-thin) solid var(--c-fg);
   background: var(--c-bg);
+}
+
+/* Simplified Slider Alternative */
+.ui-slider {
+  height: 4px;
+  background: var(--c-fg);
+  border-radius: 0 !important;
+}
+
+.ui-slider-thumb {
+  width: 16px;
+  height: 16px;
+  background: var(--c-fg);
+  border: none;
+  border-radius: 0 !important;
 }
