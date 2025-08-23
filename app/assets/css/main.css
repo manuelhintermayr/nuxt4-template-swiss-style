@@ -1,36 +1,450 @@
+/* --- Imports --- */
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-/* Custom Theme Variables */
+/* ==========================================================================
+   SWISS STYLE THEME VARIABLES
+   ========================================================================== */
 :root {
-  --font-sans: 'Public Sans', sans-serif;
-  --font-default: 'DefaultFont', sans-serif;
+  /* Typography */
+  --font-sans: Helvetica, Arial, ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Noto Sans", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 
-  --color-green-50: #effdf5;
-  --color-green-100: #d9fbe8;
-  --color-green-200: #b3f5d1;
-  --color-green-300: #75edae;
-  --color-green-400: #00dc82;
-  --color-green-500: #00c16a;
-  --color-green-600: #00a155;
-  --color-green-700: #007f45;
-  --color-green-800: #016538;
-  --color-green-900: #0a5331;
-  --color-green-950: #052e16;
+  /* Core palette – strict black & white */
+  --c-bg: #ffffff;
+  --c-fg: #000000;
 
-  --color-lila: #8b5cf6;
+  /* Border + shadow */
+  --border-w: 3px;
+  /* Swiss, clearly visible */
+  --border-w-thin: 2px;
+  --ring-w: 3px;
+
+  /* Spacing rhythm (optional helpers) */
+  --rhythm-1: .5rem;
+  --rhythm-2: 1rem;
+  /* Swiss, clearly visible */
+  --rhythm-3: 1.5rem;
+
+  /* Mouse Follower sizing (migrated) */
+  --mf-size: 48px;
 }
 
-/* Cursor Styles */
+/* Dark mode variables */
+:root.dark {
+  --c-bg: #000000;
+  --c-fg: #ffffff;
+}
+
+/* ==========================================================================
+   BASE RESET / TAILWIND OVERRIDES
+   ========================================================================== */
+@layer base {
+
+  html,
+  body {
+    background: var(--c-bg);
+    color: var(--c-fg);
+    font-family: var(--font-sans);
+    letter-spacing: .01em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* No global border radius */
+  * {
+    border-radius: 0 !important;
+  }
+
+  /* Headings – Swiss poster typography */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-transform: uppercase;
+    font-weight: 800;
+    line-height: 1.05;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 5vw, 4.5rem);
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 3.75vw, 3rem);
+  }
+
+  h3 {
+    font-size: clamp(1.25rem, 2.5vw, 2rem);
+  }
+
+  /* Links – Underline on hover only */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  /* Selection */
+  ::selection {
+    background: var(--c-fg);
+    color: var(--c-bg);
+  }
+
+  /* Scrollbar minimal */
+  *::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background: var(--c-fg);
+  }
+
+  *::-webkit-scrollbar-track {
+    background: var(--c-bg);
+  }
+
+  /* Tables */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  th,
+  td {
+    border: var(--border-w-thin) solid var(--c-fg);
+    padding: .6rem .75rem;
+  }
+
+  th {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+/* ==========================================================================
+   GENERIC BORDERS & CARDS
+   ========================================================================== */
+@layer components {
+  .swiss-card {
+    border: var(--border-w) solid var(--c-fg);
+    background: transparent;
+    padding: var(--rhythm-2);
+  }
+
+  .swiss-panel {
+    border: var(--border-w-thin) solid var(--c-fg);
+    background: transparent;
+    padding: var(--rhythm-2);
+  }
+
+  .swiss-divider {
+    border-top: var(--border-w) solid var(--c-fg);
+  }
+}
+
+/* ==========================================================================
+   SHAPES & INTERACTION
+  ========================================================================== */
+@layer components {
+
+  /* Buttons – Nuxt UI + native */
+  .ui-button,
+  .ui-btn,
+  button,
+  [type="button"],
+  [type="submit"],
+  .btn {
+    --btn-bg: transparent;
+    --btn-fg: var(--c-fg);
+    --btn-bw: var(--border-w);
+    border: var(--btn-bw) solid var(--btn-fg);
+    background: var(--btn-bg);
+    color: var(--btn-fg);
+    padding: .55rem 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .02em;
+    box-shadow: none !important;
+  }
+
+  /* Hover inverted */
+  .ui-button:hover,
+  .ui-btn:hover,
+  button:hover,
+  [type="button"]:hover,
+  [type="submit"]:hover,
+  .btn:hover {
+    background: var(--c-fg);
+    color: var(--c-bg);
+  }
+
+  /* Disabled */
+  .ui-button:disabled,
+  button:disabled {
+    opacity: .5;
+    pointer-events: none;
+  }
+
+  /* Inputs / selects / textareas – Outline Swiss */
+  .ui-input,
+  .ui-textarea,
+  .ui-select,
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea {
+    border: var(--border-w-thin) solid var(--c-fg) !important;
+    background: var(--c-bg) !important;
+    color: var(--c-fg) !important;
+    padding: .55rem .7rem !important;
+    box-shadow: none !important;
+  }
+
+  .ui-input:focus,
+  .ui-textarea:focus,
+  .ui-select:focus,
+  input:focus,
+  select:focus,
+  textarea:focus {
+    outline: var(--ring-w) solid var(--c-fg);
+    outline-offset: 2px;
+  }
+
+  /* Checkbox/Radio – edgy */
+  input[type="checkbox"],
+  input[type="radio"] {
+    width: 1.05rem;
+    height: 1.05rem;
+    border: var(--border-w-thin) solid var(--c-fg);
+    background: transparent;
+    appearance: none;
+    position: relative;
+  }
+
+  input[type="checkbox"]:checked::after,
+  input[type="radio"]:checked::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: var(--c-fg);
+  }
+
+  /* Switch */
+  .ui-switch {
+    border: var(--border-w-thin) solid var(--c-fg);
+    background: transparent;
+  }
+
+  .ui-switch[data-checked="true"] {
+    background: var(--c-fg);
+  }
+
+  .ui-switch[data-checked="true"] .ui-switch-handle {
+    background: var(--c-bg);
+  }
+
+  /* Select menu / dropdown / popover */
+  .ui-dropdown,
+  .ui-menu,
+  .ui-popover,
+  .ui-context-menu,
+  .ui-select-menu,
+  .ui-autocomplete {
+    border: var(--border-w) solid var(--c-fg) !important;
+    background: var(--c-bg) !important;
+    color: var(--c-fg) !important;
+    box-shadow: none !important;
+  }
+
+  /* Tabs */
+  .ui-tabs {
+    border-bottom: var(--border-w) solid var(--c-fg);
+  }
+
+  .ui-tab {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .02em;
+    border-bottom: var(--border-w-thin) solid transparent;
+  }
+
+  .ui-tab[aria-selected="true"] {
+    border-bottom-color: var(--c-fg);
+  }
+
+  /* Breadcrumb / Pagination */
+  .ui-breadcrumb,
+  .ui-pagination {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  /* Cards / Alerts / Badges */
+  .ui-card,
+  .ui-alert,
+  .ui-badge {
+    border: var(--border-w) solid var(--c-fg) !important;
+    background: transparent !important;
+    color: var(--c-fg) !important;
+    box-shadow: none !important;
+  }
+
+  /* Modal / Drawer / Sidebar */
+  .ui-modal,
+  .ui-drawer,
+  .ui-sidebar {
+    border: var(--border-w) solid var(--c-fg) !important;
+    background: var(--c-bg) !important;
+    box-shadow: none !important;
+  }
+
+  .ui-modal-header,
+  .ui-drawer-header {
+    border-bottom: var(--border-w-thin) solid var(--c-fg);
+  }
+
+  .ui-modal-footer,
+  .ui-drawer-footer {
+    border-top: var(--border-w-thin) solid var(--c-fg);
+  }
+
+  /* Tooltip / Toast */
+  .ui-tooltip,
+  .ui-toast {
+    border: var(--border-w-thin) solid var(--c-fg) !important;
+    background: var(--c-bg) !important;
+    color: var(--c-fg) !important;
+    box-shadow: none !important;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  /* Navigation (Navbar) */
+  .ui-navbar,
+  .ui-header,
+  header.nav {
+    border-bottom: var(--border-w) solid var(--c-fg) !important;
+    background: var(--c-bg) !important;
+    color: var(--c-fg) !important;
+  }
+
+  .ui-sidebar {
+    background: var(--c-bg) !important;
+    color: var(--c-fg) !important;
+  }
+
+  /* Tables (Nuxt UI) */
+  .ui-table {
+    border: var(--border-w) solid var(--c-fg);
+  }
+
+  .ui-table thead th {
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .ui-table th,
+  .ui-table td {
+    border-top: var(--border-w-thin) solid var(--c-fg);
+  }
+}
+
+/* ==========================================================================
+   UTILITIES (small helpers)
+   ========================================================================== */
+@layer utilities {
+  .swiss-grid {
+    /* fine grid as background (optional) */
+    background-image:
+      linear-gradient(to right, rgba(0, 0, 0, .07) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, .07) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .dark .swiss-grid {
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, .08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, .08) 1px, transparent 1px);
+  }
+
+  .swiss-section {
+    border-top: var(--border-w) solid var(--c-fg);
+    padding-top: var(--rhythm-3);
+  }
+
+  .swiss-kicker {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: .08em;
+  }
+
+  .swiss-invert:hover {
+    background: var(--c-fg);
+    color: var(--c-bg);
+  }
+}
+
+/* ==========================================================================
+   MOUSE FOLLOWER (angepasst, follower ≠ native cursor)
+   ========================================================================== */
 .mf-cursor-text {
-  color: theme('colors.gray.100');
+  color: #111;
 }
 
 .dark .mf-cursor-text {
-  color: theme('colors.gray.900');
+  color: #eee;
 }
 
 .mf-cursor:before {
-  width: 49px;
-  height: 49px;
+  width: var(--mf-size);
+  height: var(--mf-size);
+  border-width: var(--border-w-thin);
+}
+
+.mf-cursor.-inverse .mf-cursor-inner {
+  background: #fff !important;
+  border-color: #000 !important;
+}
+
+:root.dark .mf-cursor.-inverse .mf-cursor-inner {
+  background: #000 !important;
+  border-color: #fff !important;
+}
+
+.mf-cursor.-hidden {
+  opacity: 0 !important;
+}
+
+/* only hide follower */
+.mf-cursor.-opaque .mf-cursor-inner {
+  opacity: .4;
+}
+
+.mf-cursor.-pointer .mf-cursor-inner {
+  transform: scale(1.08);
+}
+
+.mf-cursor.-custom .mf-cursor-inner {
+  transform: scale(1.2) rotate(1.5deg);
+  border-width: var(--border-w-thin);
+}
+
+/* ==========================================================================
+   PRINT (optional, sauberes Schwarz/Weiß)
+/* PRINT (optional, clean black/white)
+  ========================================================================== */
+@media print {
+  * {
+    box-shadow: none !important;
+  }
+
+  a {
+    text-decoration: underline;
+  }
 }
