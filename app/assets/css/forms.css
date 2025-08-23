@@ -109,3 +109,38 @@ input[type="radio"]:checked::after {
   color: var(--c-fg) !important;
   box-shadow: none !important;
 }
+
+/* Slider / Range (URange) */
+.ui-range, .u-range, input[type="range"] {
+  appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 6px;
+  background: var(--c-bg);
+  border: var(--border-w-thin) solid var(--c-fg);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: -7px;
+  border: var(--border-w-thin) solid var(--c-fg);
+  background: var(--c-bg);
+}
+
+input[type="range"]::-moz-range-track {
+  height: 6px;
+  background: var(--c-bg);
+  border: var(--border-w-thin) solid var(--c-fg);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border: var(--border-w-thin) solid var(--c-fg);
+  background: var(--c-bg);
+}

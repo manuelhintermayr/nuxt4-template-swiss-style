@@ -18,11 +18,79 @@
   border-bottom-color: var(--c-fg);
 }
 
+/* Extended Tabs (UTabs) */
+.ui-tabs, .u-tabs {
+  border-bottom: var(--border-w) solid var(--c-fg);
+  background: transparent;
+}
+
+.ui-tab, .u-tab, [role="tab"] {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .02em;
+  border-bottom: var(--border-w-thin) solid transparent;
+  margin-right: .75rem;
+  padding: .5rem 0;
+}
+
+.ui-tab[aria-selected="true"], .u-tab[aria-selected="true"], [role="tab"][aria-selected="true"] {
+  border-bottom-color: var(--c-fg);
+}
+
+.ui-tab:focus-visible, .u-tab:focus-visible, [role="tab"]:focus-visible {
+  outline: var(--ring-w) solid var(--c-fg);
+  outline-offset: 2px;
+}
+
 /* Breadcrumb / Pagination */
 .ui-breadcrumb,
 .ui-pagination {
   text-transform: uppercase;
   font-weight: 700;
+}
+
+/* Extended Pagination (UPagination) */
+.ui-pagination, .u-pagination {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.ui-pagination button, .u-pagination button, .ui-pagination a, .u-pagination a {
+  border: var(--border-w-thin) solid var(--c-fg);
+  background: transparent;
+  color: var(--c-fg);
+  padding: .35rem .65rem;
+  min-width: 2.25rem;
+  text-align: center;
+}
+
+.ui-pagination .is-active, .u-pagination .is-active {
+  background: var(--c-fg);
+  color: var(--c-bg);
+}
+
+/* Extended Breadcrumb (UBreadcrumb) */
+.ui-breadcrumb, .u-breadcrumb, nav[aria-label="Breadcrumb"] {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.ui-breadcrumb a, .u-breadcrumb a { 
+  text-decoration: none; 
+}
+
+.ui-breadcrumb a:hover, .u-breadcrumb a:hover { 
+  text-decoration: underline; 
+}
+
+.ui-breadcrumb .separator, .u-breadcrumb .separator { 
+  opacity: .6; 
 }
 
 /* Cards / Alerts / Badges */
@@ -70,6 +138,177 @@
   box-shadow: none !important;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+/* Extended Tooltip (UTooltip) */
+.ui-tooltip, .u-tooltip, [role="tooltip"] {
+  border: var(--border-w-thin) solid var(--c-fg) !important;
+  background: var(--c-bg) !important;
+  color: var(--c-fg) !important;
+  box-shadow: none !important;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .02em;
+  padding: .35rem .5rem;
+}
+
+.ui-tooltip-arrow, .u-tooltip-arrow { 
+  display: none; /* kantig, ohne Pfeil */ 
+}
+
+/* Stepper (UStepper) */
+.ui-stepper, .u-stepper {
+  display: grid;
+  gap: .75rem;
+}
+
+.ui-step, .u-step {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  gap: .75rem;
+  align-items: start;
+}
+
+.ui-step-index, .u-step-index {
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border: var(--border-w-thin) solid var(--c-fg);
+  background: transparent;
+  font-weight: 800;
+}
+
+.ui-step[aria-current="step"] .ui-step-index,
+.u-step[aria-current="step"] .u-step-index {
+  background: var(--c-fg);
+  color: var(--c-bg);
+}
+
+.ui-step-title, .u-step-title { 
+  text-transform: uppercase; 
+  font-weight: 800; 
+}
+
+.ui-step-desc, .u-step-desc { 
+  opacity: .8; 
+}
+
+/* Extended Dropdown / Menu (UDropdown / UMenu) */
+.ui-menu-item, .u-menu-item, [role="menuitem"] {
+  padding: .5rem .75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-top: var(--border-w-thin) solid transparent;
+}
+
+.ui-menu-item:hover, .u-menu-item:hover, [role="menuitem"]:hover {
+  background: var(--c-fg);
+  color: var(--c-bg);
+}
+
+/* Tag / Chip (UTag) */
+.ui-tag, .u-tag, .chip, .tag {
+  border: var(--border-w-thin) solid var(--c-fg) !important;
+  background: transparent !important;
+  color: var(--c-fg) !important;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: .15rem .45rem;
+}
+
+.ui-tag .close, .u-tag .close, .chip .close {
+  border-left: var(--border-w-thin) solid var(--c-fg);
+  padding-left: .35rem;
+  margin-left: .35rem;
+}
+
+/* Progress (UProgress) */
+.ui-progress, .u-progress, progress {
+  width: 100%;
+  height: 10px;
+  background: var(--c-bg);
+  border: var(--border-w-thin) solid var(--c-fg);
+}
+
+.ui-progress::-webkit-progress-value { 
+  background: var(--c-fg); 
+}
+
+.ui-progress::-webkit-progress-bar { 
+  background: var(--c-bg); 
+}
+
+progress::-webkit-progress-value { 
+  background: var(--c-fg); 
+}
+
+progress::-webkit-progress-bar { 
+  background: var(--c-bg); 
+}
+
+progress::-moz-progress-bar { 
+  background: var(--c-fg); 
+}
+
+/* Calendar / DatePicker (UCalendar, UDatePicker) */
+.ui-calendar, .u-calendar, .ui-datepicker, .u-datepicker {
+  border: var(--border-w) solid var(--c-fg);
+  background: var(--c-bg);
+  color: var(--c-fg);
+}
+
+.ui-calendar header, .u-calendar header,
+.ui-datepicker header, .u-datepicker header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--border-w-thin) solid var(--c-fg);
+  padding: .5rem .75rem;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.ui-calendar table, .u-calendar table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+.ui-calendar th, .u-calendar th { 
+  text-transform: uppercase; 
+  font-weight: 800; 
+  border-bottom: var(--border-w-thin) solid var(--c-fg); 
+}
+
+.ui-calendar td, .u-calendar td { 
+  text-align: center; 
+  padding: .45rem 0; 
+  border-top: var(--border-w-thin) solid transparent; 
+}
+
+.ui-calendar .is-today, .u-calendar .is-today { 
+  outline: var(--ring-w) solid var(--c-fg); 
+  outline-offset: -2px; 
+}
+
+.ui-calendar .is-selected, .u-calendar .is-selected { 
+  background: var(--c-fg); 
+  color: var(--c-bg); 
+}
+
+/* Notification / Toast (UNotification) */
+.ui-notification, .u-notification, .ui-toast, .u-toast {
+  border: var(--border-w) solid var(--c-fg) !important;
+  background: var(--c-bg) !important;
+  color: var(--c-fg) !important;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .02em;
+  box-shadow: none !important;
+}
+
+.ui-notification .title, .u-notification .title { 
+  font-weight: 900; 
 }
 
 /* Avatare */

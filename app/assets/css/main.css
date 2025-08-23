@@ -147,6 +147,26 @@
 }
 
 /* ==========================================================================
+   ACCESSIBILITY - Swiss Style
+   ========================================================================== */
+
+/* Focus states (generic hard focus) */
+a:focus-visible, button:focus-visible, [role="button"]:focus-visible,
+[role="menuitem"]:focus-visible, [role="tab"]:focus-visible,
+input:focus-visible, select:focus-visible, textarea:focus-visible {
+  outline: var(--ring-w) solid var(--c-fg);
+  outline-offset: 2px;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * { 
+    transition: none !important; 
+    animation: none !important; 
+  }
+}
+
+/* ==========================================================================
    PRINT (optional, clean black/white)
    ========================================================================== */
 @media print {
