@@ -1,0 +1,35 @@
+/* ==========================================================================
+   TABLES - Swiss Style
+   ========================================================================== */
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: var(--border-w-thin) solid var(--c-fg);
+  padding: .6rem .75rem;
+}
+
+th {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Tables (Nuxt UI) */
+.ui-table {
+  border: var(--border-w) solid var(--c-fg);
+}
+
+.ui-table thead th {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.ui-table th,
+.ui-table td {
+  border-top: var(--border-w-thin) solid var(--c-fg);
+}

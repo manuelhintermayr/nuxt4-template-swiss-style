@@ -1,0 +1,17 @@
+/* ==========================================================================
+   NAVIGATION - Swiss Style
+   ========================================================================== */
+
+/* Navigation (Navbar) */
+.ui-navbar,
+.ui-header,
+header.nav {
+  border-bottom: var(--border-w) solid var(--c-fg) !important;
+  background: var(--c-bg) !important;
+  color: var(--c-fg) !important;
+}
+
+.ui-sidebar {
+  background: var(--c-bg) !important;
+  color: var(--c-fg) !important;
+}

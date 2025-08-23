@@ -1,0 +1,111 @@
+/* ==========================================================================
+   FORMS & INPUTS - Swiss Style
+   ========================================================================== */
+
+/* Buttons – Nuxt UI + native */
+.ui-button,
+.ui-btn,
+button,
+[type="button"],
+[type="submit"],
+.btn {
+  --btn-bg: transparent;
+  --btn-fg: var(--c-fg);
+  --btn-bw: var(--border-w);
+  border: var(--btn-bw) solid var(--btn-fg);
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  padding: .55rem 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+  box-shadow: none !important;
+}
+
+/* Hover inverted */
+.ui-button:hover,
+.ui-btn:hover,
+button:hover,
+[type="button"]:hover,
+[type="submit"]:hover,
+.btn:hover {
+  background: var(--c-fg);
+  color: var(--c-bg);
+}
+
+/* Disabled */
+.ui-button:disabled,
+button:disabled {
+  opacity: .5;
+  pointer-events: none;
+}
+
+/* Inputs / selects / textareas – Outline Swiss */
+.ui-input,
+.ui-textarea,
+.ui-select,
+input:not([type="checkbox"]):not([type="radio"]),
+select,
+textarea {
+  border: var(--border-w-thin) solid var(--c-fg) !important;
+  background: var(--c-bg) !important;
+  color: var(--c-fg) !important;
+  padding: .55rem .7rem !important;
+  box-shadow: none !important;
+}
+
+.ui-input:focus,
+.ui-textarea:focus,
+.ui-select:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: var(--ring-w) solid var(--c-fg);
+  outline-offset: 2px;
+}
+
+/* Checkbox/Radio – edgy */
+input[type="checkbox"],
+input[type="radio"] {
+  width: 1.05rem;
+  height: 1.05rem;
+  border: var(--border-w-thin) solid var(--c-fg);
+  background: transparent;
+  appearance: none;
+  position: relative;
+}
+
+input[type="checkbox"]:checked::after,
+input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: var(--c-fg);
+}
+
+/* Switch */
+.ui-switch {
+  border: var(--border-w-thin) solid var(--c-fg);
+  background: transparent;
+}
+
+.ui-switch[data-checked="true"] {
+  background: var(--c-fg);
+}
+
+.ui-switch[data-checked="true"] .ui-switch-handle {
+  background: var(--c-bg);
+}
+
+/* Select menu / dropdown / popover */
+.ui-dropdown,
+.ui-menu,
+.ui-popover,
+.ui-context-menu,
+.ui-select-menu,
+.ui-autocomplete {
+  border: var(--border-w) solid var(--c-fg) !important;
+  background: var(--c-bg) !important;
+  color: var(--c-fg) !important;
+  box-shadow: none !important;
+}

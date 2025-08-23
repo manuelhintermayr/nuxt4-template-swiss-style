@@ -1,0 +1,83 @@
+/* ==========================================================================
+   UI COMPONENTS - Swiss Style
+   ========================================================================== */
+
+/* Tabs */
+.ui-tabs {
+  border-bottom: var(--border-w) solid var(--c-fg);
+}
+
+.ui-tab {
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .02em;
+  border-bottom: var(--border-w-thin) solid transparent;
+}
+
+.ui-tab[aria-selected="true"] {
+  border-bottom-color: var(--c-fg);
+}
+
+/* Breadcrumb / Pagination */
+.ui-breadcrumb,
+.ui-pagination {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Cards / Alerts / Badges */
+.ui-card,
+.ui-alert,
+.ui-badge {
+  border: var(--border-w) solid var(--c-fg) !important;
+  background: transparent !important;
+  color: var(--c-fg) !important;
+  box-shadow: none !important;
+}
+
+/* Modal / Drawer / Sidebar */
+.ui-modal,
+.ui-drawer,
+.ui-sidebar {
+  border: var(--border-w) solid var(--c-fg) !important;
+  background: var(--c-bg) !important;
+  box-shadow: none !important;
+}
+
+.ui-modal-header,
+.ui-drawer-header {
+  border-bottom: var(--border-w-thin) solid var(--c-fg);
+}
+
+.ui-modal-footer,
+.ui-drawer-footer {
+  border-top: var(--border-w-thin) solid var(--c-fg);
+}
+
+/* Tooltip / Toast */
+.ui-tooltip,
+.ui-toast {
+  border: var(--border-w-thin) solid var(--c-fg) !important;
+  background: var(--c-bg) !important;
+  color: var(--c-fg) !important;
+  box-shadow: none !important;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Generic Swiss components */
+.swiss-card {
+  border: var(--border-w) solid var(--c-fg);
+  background: transparent;
+  padding: var(--rhythm-2);
+}
+
+.swiss-panel {
+  border: var(--border-w-thin) solid var(--c-fg);
+  background: transparent;
+  padding: var(--rhythm-2);
+}
+
+.swiss-divider {
+  border-top: var(--border-w) solid var(--c-fg);
+}
