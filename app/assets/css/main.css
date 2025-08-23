@@ -147,6 +147,27 @@
     background: var(--c-fg);
     color: var(--c-bg);
   }
+  
+  /* Tailwind radius overrides */
+  .rounded-none { border-radius: 0 !important; }
+  .rounded-sm { border-radius: 0 !important; }
+  .rounded { border-radius: 0 !important; }
+  .rounded-md { border-radius: 0 !important; }
+  .rounded-lg { border-radius: 0 !important; }
+  .rounded-xl { border-radius: 0 !important; }
+  .rounded-2xl { border-radius: 0 !important; }
+  .rounded-3xl { border-radius: 0 !important; }
+  .rounded-full { border-radius: 0 !important; }
+  
+  /* Tailwind shadow overrides */
+  .shadow-sm { box-shadow: none !important; }
+  .shadow { box-shadow: none !important; }
+  .shadow-md { box-shadow: none !important; }
+  .shadow-lg { box-shadow: none !important; }
+  .shadow-xl { box-shadow: none !important; }
+  .shadow-2xl { box-shadow: none !important; }
+  .shadow-inner { box-shadow: none !important; }
+  .shadow-none { box-shadow: none !important; }
 }
 
 /* ==========================================================================
