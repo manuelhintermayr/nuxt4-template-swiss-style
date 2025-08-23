@@ -2,6 +2,36 @@
    FORMS & INPUTS - Swiss Style
    ========================================================================== */
 
+/* Form Group Labels */
+.ui-form-group label,
+.ui-label {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .05em;
+  margin-bottom: .25rem;
+  display: block;
+}
+
+/* Help & Error Messages */
+.ui-form-group .ui-help {
+  font-size: .75rem;
+  text-transform: none;
+  font-weight: 400;
+  margin-top: .25rem;
+  color: var(--c-fg);
+  opacity: .7;
+}
+
+.ui-form-group .ui-error,
+.ui-error {
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  color: #d00; /* klar rot für Swiss Warning */
+  margin-top: .25rem;
+}
+
 /* Buttons – Nuxt UI + native */
 .ui-button,
 .ui-btn,
@@ -41,30 +71,80 @@ button:disabled {
   pointer-events: none;
 }
 
-/* Inputs / selects / textareas – Outline Swiss */
+/* Inputs / selects / textareas – Swiss Style */
 .ui-input,
 .ui-textarea,
 .ui-select,
+.ui-select select,
 input:not([type="checkbox"]):not([type="radio"]),
 select,
 textarea {
-  border: var(--border-w-thin) solid var(--c-fg) !important;
+  border: var(--border-w) solid var(--c-fg) !important;
+  border-radius: 0 !important; /* kantig */
   background: var(--c-bg) !important;
   color: var(--c-fg) !important;
   padding: var(--rhythm-2) !important;
   font-weight: 500;
   box-shadow: none !important;
-  border-radius: 0 !important;
 }
 
 .ui-input:focus,
 .ui-textarea:focus,
 .ui-select:focus,
+.ui-select select:focus,
 input:focus,
 select:focus,
 textarea:focus {
   outline: none;
   border: var(--border-w) solid var(--c-fg) !important;
+  border-color: var(--c-fg);
+  background: var(--c-bg);
+}
+
+/* Disabled States */
+.ui-input:disabled,
+.ui-textarea:disabled,
+.ui-select select:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  background: #e5e5e5 !important;
+  color: #777 !important;
+  border-color: #777 !important;
+  opacity: 1;
+}
+
+.dark .ui-input:disabled,
+.dark .ui-textarea:disabled,
+.dark .ui-select select:disabled,
+.dark input:disabled,
+.dark select:disabled,
+.dark textarea:disabled {
+  background: #222 !important;
+  color: #555 !important;
+  border-color: #555 !important;
+}
+
+/* Modern Checkboxes, Radios, Switches */
+.ui-checkbox input,
+.ui-radio input,
+.ui-switch input {
+  accent-color: var(--c-fg);
+}
+
+.ui-checkbox,
+.ui-radio,
+.ui-switch {
+  gap: .4rem;
+  align-items: center;
+}
+
+.ui-checkbox label,
+.ui-radio label,
+.ui-switch label {
+  font-size: .9rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 /* Switch / Checkbox / Radio */
@@ -160,17 +240,35 @@ input[type="range"]::-moz-range-thumb {
   background: var(--c-bg);
 }
 
-/* Simplified Slider Alternative */
+/* Enhanced Slider Styling */
 .ui-slider {
+  border: none;
   height: 4px;
   background: var(--c-fg);
+  border-radius: 0 !important;
+}
+
+.ui-slider::-webkit-slider-thumb {
+  appearance: none;
+  background: var(--c-bg);
+  border: var(--border-w) solid var(--c-fg);
+  width: 16px;
+  height: 16px;
+  border-radius: 0 !important;
+}
+
+.ui-slider::-moz-range-thumb {
+  background: var(--c-bg);
+  border: var(--border-w) solid var(--c-fg);
+  width: 16px;
+  height: 16px;
   border-radius: 0 !important;
 }
 
 .ui-slider-thumb {
   width: 16px;
   height: 16px;
-  background: var(--c-fg);
-  border: none;
+  background: var(--c-bg);
+  border: var(--border-w) solid var(--c-fg);
   border-radius: 0 !important;
 }
