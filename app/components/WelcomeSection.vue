@@ -22,7 +22,7 @@
             </div>
 
             <div class="flex justify-center items-center space-x-4 text-sm text-gray-600 dark:text-gray-400">
-                <a href="https://github.com/manuelhintermayr/nuxt4-template" target="_blank" rel="noopener noreferrer"
+                <a href="https://github.com/manuelhintermayr/nuxt4-template-swiss-style" target="_blank" rel="noopener noreferrer"
                     class="inline-flex items-center space-x-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
                     :data-cursor-text="$t('welcome.clickHere')">
                     <UIcon name="i-heroicons-code-bracket" class="w-4 h-4" />

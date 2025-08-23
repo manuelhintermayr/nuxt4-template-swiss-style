@@ -5,9 +5,9 @@
         "switchToDark": "Switch to dark mode"
     },
     "welcome": {
-        "title": "Nuxt 4 Template",
-        "subtitle": "A modern, production-ready starter template with Nuxt UI",
-        "repository": "View Repository",
+    "title": "Nuxt 4 Template – Swiss Style",
+    "subtitle": "A Nuxt 4 template with Nuxt UI, Tailwind CSS and i18n support in the Swiss Style (International Typographic Style).",
+    "repository": "View Repository",
         "productionReady": "Production Ready",
         "builtWith": "Built with",
         "by": "by",

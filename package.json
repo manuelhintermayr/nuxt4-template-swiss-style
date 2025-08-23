@@ -1,7 +1,7 @@
 {
-  "name": "nuxt4-template",
+  "name": "nuxt4-template-siwss-style",
   "version": "1.0.0",
-  "description": "Nuxt 4 template with nuxt/ui (including Tailwind CSS) and i18n support.",
+  "description": "Nuxt 4 template with nuxt/ui (including Tailwind CSS) and i18n support in the Swiss Style (International Typographic Style).",
   "author": "Manuel Hintermayr - https://github.com/manuelhintermayr/nuxt4-template",
   "type": "module",
   "private": true,
