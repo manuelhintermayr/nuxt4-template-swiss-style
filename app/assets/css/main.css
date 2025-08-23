@@ -198,12 +198,13 @@
   /* Links – Underline on hover only */
   a {
     text-decoration: none;
-    color: inherit;
+    color: currentColor;
   }
 
   a:hover {
-    background: var(--c-fg);
-    color: var(--c-bg);
+    color: currentColor;
+    text-decoration: underline;
+    text-decoration-color: currentColor;
   }
 
   /* Selection */
