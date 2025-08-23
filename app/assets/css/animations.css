@@ -95,17 +95,6 @@
   outline-offset: 4px;
 }
 
-/* Subtle glow effects for interactive elements */
-.glow-on-hover {
-  transition: box-shadow var(--animation-duration-normal) ease;
-}
-
-.glow-on-hover:hover {
-  box-shadow:
-    0 0 20px rgba(var(--color-primary-500), 0.15),
-    0 0 40px rgba(var(--color-primary-500), 0.1);
-}
-
 /* Section spacing for scroll animations */
 .animated-section {
   padding: 2rem 0;

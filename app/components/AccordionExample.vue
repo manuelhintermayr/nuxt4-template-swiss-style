@@ -9,7 +9,10 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <!-- Basic Accordion -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.accordion.basic') }}</h5>
                 </template>
@@ -17,7 +20,10 @@
             </UCard>
 
             <!-- Multiple Type Accordion -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.accordion.multiple') }}</h5>
                 </template>

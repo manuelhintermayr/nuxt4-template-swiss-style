@@ -1,5 +1,8 @@
 <template>
-    <UCard class="feature-card glow-on-hover">
+    <UCard class="feature-card border-1 border-current bg-transparent" :ui="{
+        header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+        body: 'px-4 py-4 sm:px-6'
+    }">
         <template #header>
             <div class="flex items-center">
                 <UIcon :name="icon" :class="`w-5 h-5 ${iconColor} mr-2`" />

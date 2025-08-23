@@ -21,8 +21,7 @@ const CARD_SELECTORS = [
     '[class*="card"]',
     '[class*="Card"]',
     'article',
-    '.feature-card',
-    '.glow-on-hover'
+    '.feature-card'
 ] as const
 
 export default defineNuxtPlugin((nuxtApp) => {
