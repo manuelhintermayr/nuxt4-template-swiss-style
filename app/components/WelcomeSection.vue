@@ -25,7 +25,7 @@
                 <a href="https://github.com/manuelhintermayr/nuxt4-template-swiss-style" target="_blank" rel="noopener noreferrer"
                     class="inline-flex items-center space-x-2 transition-colors duration-200 text-black dark:text-white"
                     :data-cursor-text="$t('welcome.clickHere')">
-                    <UIcon name="i-heroicons-code-bracket" class="w-4 h-4" />
+                    <UIcon name="i-heroicons-code-bracket" class="w-4 h-4 text-black dark:text-white" />
                     <span>{{ $t('welcome.repository') }}</span>
                 </a>
 
