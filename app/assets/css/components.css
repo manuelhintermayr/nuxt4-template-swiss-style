@@ -103,6 +103,49 @@
   padding: var(--rhythm-2);
 }
 
+/* Loading Screen */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  background: var(--c-bg);
+  color: var(--c-fg);
+  border: var(--border-w) solid var(--c-fg);
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+
+.loading-screen .spinner {
+  border: var(--border-w-thin) solid var(--c-fg);
+  border-top-color: transparent;
+  border-radius: 0 !important; /* Swiss Style kantig */
+  width: 48px;
+  height: 48px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin { 
+  to { transform: rotate(360deg); } 
+}
+
+/* Overlay */
+.ui-overlay, .overlay {
+  background: rgba(0,0,0,0.75);
+  color: var(--c-bg);
+  border: var(--border-w) solid var(--c-fg);
+}
+
+.ui-overlay-content {
+  background: var(--c-bg);
+  color: var(--c-fg);
+  padding: var(--rhythm-3);
+  border: var(--border-w) solid var(--c-fg);
+}
+
 /* Generic Swiss components */
 .swiss-card {
   border: var(--border-w) solid var(--c-fg);

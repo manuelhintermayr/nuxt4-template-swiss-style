@@ -36,6 +36,7 @@ export default defineNuxtConfig({
     '~/assets/css/components.css',
     '~/assets/css/navigation.css',
     '~/assets/css/tables.css',
+    '~/assets/css/layout.css',
     '~/assets/css/mouse-follower.css',
     '~/assets/css/animations.css'
   ],
