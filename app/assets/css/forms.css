@@ -35,7 +35,6 @@
 /* Buttons – Nuxt UI + native */
 .ui-button,
 .ui-btn,
-button,
 [type="button"],
 [type="submit"],
 .btn {
@@ -56,7 +55,6 @@ button,
 /* Hover inverted */
 .ui-button:hover,
 .ui-btn:hover,
-button:hover,
 [type="button"]:hover,
 [type="submit"]:hover,
 .btn:hover {
