@@ -110,7 +110,10 @@
             </UCard>
 
             <!-- Radio Group -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.formsAdvanced.radioGroup.title') }}</h5>
                 </template>
@@ -120,7 +123,10 @@
             </UCard>
 
             <!-- Switch -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.formsAdvanced.switch.title') }}</h5>
                 </template>
@@ -132,7 +138,10 @@
             </UCard>
 
             <!-- Slider -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.formsAdvanced.slider.title') }}</h5>
                 </template>
@@ -151,7 +160,10 @@
             </UCard>
 
             <!-- Progress -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.formsAdvanced.progress.title') }}</h5>
                 </template>
@@ -172,7 +184,10 @@
             </UCard>
 
             <!-- ColorPicker -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.formsAdvanced.colorPicker.title') }}</h5>
                 </template>
@@ -199,7 +214,10 @@
             </UCard>
 
             <!-- File Upload -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.formsAdvanced.fileUpload.title') }}</h5>
                 </template>
@@ -211,7 +229,10 @@
             </UCard>
 
             <!-- Kbd (Keyboard shortcuts) -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.formsAdvanced.kbd.title') }}</h5>
                 </template>

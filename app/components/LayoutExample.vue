@@ -13,7 +13,10 @@
                 <h5 class="font-medium">{{ t('examples.layout.card.title') }}</h5>
 
                 <!-- Default Card -->
-                <UCard class="card-tilt">
+                <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                     <template #header>
                         <h6 class="text-sm font-semibold">{{ t('examples.layout.card.default') }}</h6>
                     </template>
@@ -31,7 +34,10 @@
                 </UCard>
 
                 <!-- Subtle Card -->
-                <UCard variant="subtle" class="card-tilt">
+                <UCard variant="subtle" class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                     <template #header>
                         <h6 class="text-sm font-semibold">{{ t('examples.layout.card.subtle') }}</h6>
                     </template>
@@ -55,7 +61,10 @@
             <div class="space-y-4">
                 <h5 class="font-medium">{{ t('examples.layout.container.title') }}</h5>
 
-                <UCard class="card-tilt">
+                <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                     <template #header>
                         <h6 class="text-sm font-semibold">{{ t('examples.layout.container.responsive') }}</h6>
                     </template>
@@ -69,7 +78,10 @@
                 </UCard>
 
                 <!-- Chip Examples -->
-                <UCard class="card-tilt">
+                <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                     <template #header>
                         <h6 class="text-sm font-semibold">{{ t('examples.layout.chip.title') }}</h6>
                     </template>

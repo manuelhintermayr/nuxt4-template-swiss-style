@@ -11,7 +11,10 @@
             <h5 class="text-md font-medium text-gray-700 dark:text-gray-300">{{
                 $t('examples.mouseFollower.projectCards') }}</h5>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <UCard class="card-tilt cursor-pointer"
+                <UCard class="card-tilt cursor-pointer border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }"
                     :data-cursor-text="$t('examples.mouseFollower.cursorText.viewDetails')">
                     <template #header>
                         <div class="flex items-center">
@@ -24,7 +27,10 @@
                     </p>
                 </UCard>
 
-                <UCard class="card-tilt cursor-pointer"
+                <UCard class="card-tilt cursor-pointer border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }"
                     :data-cursor-text="$t('examples.mouseFollower.cursorText.exploreProject')">
                     <template #header>
                         <div class="flex items-center">
@@ -68,7 +74,10 @@
                 $t('examples.mouseFollower.configuration.title') }}
             </h5>
             <div>
-                <UCard class="w-full">
+                <UCard class="w-full border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                     <template #header>
                         <h6 class="font-semibold">{{ $t('examples.mouseFollower.configuration.speed') }}</h6>
                     </template>
@@ -234,7 +243,10 @@
                 $t('examples.mouseFollower.skewingEffects') }}
             </h5>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <UCard class="card-tilt cursor-pointer text-center" @mouseenter="setSkewing(5)"
+                <UCard class="card-tilt cursor-pointer text-center border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }" @mouseenter="setSkewing(5)"
                     @mouseleave="removeSkewing()"
                     :data-cursor-text="$t('examples.mouseFollower.cursorText.lightSkewing')">
                     <div class="p-4">
@@ -246,7 +258,10 @@
                     </div>
                 </UCard>
 
-                <UCard class="card-tilt cursor-pointer text-center" @mouseenter="setSkewing(50)"
+                <UCard class="card-tilt cursor-pointer text-center border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }" @mouseenter="setSkewing(50)"
                     @mouseleave="removeSkewing()"
                     :data-cursor-text="$t('examples.mouseFollower.cursorText.strongSkewing')">
                     <div class="p-4">
@@ -258,7 +273,10 @@
                     </div>
                 </UCard>
 
-                <UCard class="card-tilt cursor-pointer text-center" @mouseenter="setSkewing(100)"
+                <UCard class="card-tilt cursor-pointer text-center border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }" @mouseenter="setSkewing(100)"
                     @mouseleave="removeSkewing()"
                     :data-cursor-text="$t('examples.mouseFollower.cursorText.extremeSkewing')">
                     <div class="p-4">
