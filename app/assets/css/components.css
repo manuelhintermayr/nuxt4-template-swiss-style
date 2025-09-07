@@ -299,6 +299,14 @@ progress::-moz-progress-bar {
   border: none;
 }
 
+.data-today\:not-data-\[selected\]\:text-primary {
+    &[data-today] {
+        &:not(*[data-selected]) {
+          color: currentColor;
+        }
+      }
+    }
+
 [role="grid"] { 
   width: 100%; 
 }
