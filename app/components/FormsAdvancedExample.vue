@@ -53,7 +53,7 @@
                             </UButton>
 
                             <template #content>
-                                <UCalendar v-model="selectedPickerDate" class="p-2 yolo" />
+                                <UCalendar v-model="selectedPickerDate" class="p-2" />
                             </template>
                         </UPopover>
                     </div>
