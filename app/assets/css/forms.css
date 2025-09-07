@@ -123,71 +123,100 @@ textarea:disabled {
   border-color: #555 !important;
 }
 
-/* Modern Checkboxes, Radios, Switches */
-.ui-checkbox input,
-.ui-radio input,
-.ui-switch input {
-  accent-color: var(--c-fg);
-}
 
-.ui-checkbox,
-.ui-radio,
-.ui-switch {
-  gap: .4rem;
+/* Modern Checkboxes, Radios, Switches – Tailwind/ARIA DOM */
+[role="checkbox"],
+[role="radio"] {
+  /* Grundform: Größe, Border, Hintergrund */
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-flex;
   align-items: center;
-}
-
-.ui-checkbox label,
-.ui-radio label,
-.ui-switch label {
-  font-size: .9rem;
-  text-transform: uppercase;
-  font-weight: 600;
-}
-
-/* Switch / Checkbox / Radio */
-.ui-switch, .ui-checkbox, .ui-radio {
-  border: var(--border-w) solid var(--c-fg);
-  border-radius: 0 !important;
+  justify-content: center;
+  border-radius: 0.2rem;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--c-fg);
   background: transparent;
+  transition: background 0.2s, border-color 0.2s;
 }
 
-.ui-switch-checked, .ui-checkbox-checked, .ui-radio-checked {
+[role="checkbox"][data-state="checked"],
+[role="radio"][data-state="checked"] {
   background: var(--c-fg);
+  border-color: var(--c-fg);
+}
+
+[role="checkbox"] [data-state="checked"],
+[role="radio"] [data-state="checked"] {
   color: var(--c-bg);
 }
 
-/* Legacy Checkbox/Radio – edgy */
-input[type="checkbox"],
-input[type="radio"] {
-  width: 1.05rem;
-  height: 1.05rem;
-  border: var(--border-w-thin) solid var(--c-fg);
-  background: transparent;
-  appearance: none;
+[role="checkbox"]:focus-visible,
+[role="radio"]:focus-visible {
+  outline: 2px solid var(--c-primary);
+  outline-offset: 2px;
+}
+
+/* Checkbox/Radio Icon (z.B. Checkmark) */
+[role="checkbox"] [data-state="checked"] .iconify,
+[role="radio"] [data-state="checked"] .iconify {
+  color: var(--c-bg);
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Switches */
+/* [role="switch"] {
+  width: 2.25rem;
+  height: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background: var(--c-accented);
+  transition: background 0.2s;
   position: relative;
+} */
+/* 
+[role="switch"][data-state="checked"] {
+  background: var(--c-primary);
 }
 
-input[type="checkbox"]:checked::after,
-input[type="radio"]:checked::after {
-  content: "";
+[role="switch"]:focus-visible {
+  outline: 2px solid var(--c-primary);
+  outline-offset: 2px;
+}
+
+/* Switch Handle */
+/* [role="switch"] .group {
   position: absolute;
-  inset: 2px;
-  background: var(--c-fg);
+  left: 0.15rem;
+  top: 50%;
+  transform: translateY(-50%) translateX(0);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 9999px;
+  background: var(--c-default);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
 }
+[role="switch"][data-state="checked"] .group {
+  transform: translateY(-50%) translateX(1rem);
+} */
 
-/* Switch */
-.ui-switch {
-  border: var(--border-w-thin) solid var(--c-fg);
-  background: transparent;
-}
-
-.ui-switch[data-checked="true"] {
-  background: var(--c-fg);
-}
-
-.ui-switch[data-checked="true"] .ui-switch-handle {
-  background: var(--c-bg);
+/* Label Anpassung */
+.ui-checkbox label,
+.ui-radio label,
+.ui-switch label,
+[role="checkbox"] + label,
+[role="radio"] + label,
+[role="switch"] + label {
+  font-size: .95rem;
+  text-transform: none;
+  font-weight: 500;
+  margin-left: .5rem;
+  color: var(--c-fg);
 }
 
 /* Select menu / dropdown / popover */
