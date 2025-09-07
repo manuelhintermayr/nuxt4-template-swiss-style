@@ -302,7 +302,6 @@ input[type="range"]::-moz-range-thumb:hover {
 
 /* Selected states */
 [aria-selected="true"] {
-  background: var(--c-fg);
   color: var(--c-bg);
   font-weight: 900;
 }

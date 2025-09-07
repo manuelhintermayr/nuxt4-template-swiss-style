@@ -276,14 +276,13 @@ progress::-moz-progress-bar {
 }
 
 /* Calendar / DatePicker (UCalendar, UDatePicker) */
-.ui-calendar, .u-calendar, .ui-datepicker, .u-datepicker {
+[role="application"] {
   border: var(--border-w) solid var(--c-fg);
   background: var(--c-bg);
   color: var(--c-fg);
 }
 
-.ui-calendar header, .u-calendar header,
-.ui-datepicker header, .u-datepicker header {
+[role="application"] > div {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -293,42 +292,39 @@ progress::-moz-progress-bar {
   font-weight: 800;
 }
 
-.ui-calendar table, .u-calendar table { 
-  width: 100%; 
-  border-collapse: collapse; 
+[role="application"] button,
+[role="grid"] th,
+[role="grid"] td
+{
+  border: none;
 }
 
-.ui-calendar th, .u-calendar th { 
+[role="grid"] { 
+  width: 100%; 
+}
+
+[role="grid"] th { 
   text-transform: uppercase; 
   font-weight: 800; 
-  border-bottom: var(--border-w-thin) solid var(--c-fg); 
 }
-
-.ui-calendar td, .u-calendar td { 
+[role="gridcell"] { 
   text-align: center; 
   padding: .45rem 0; 
   border-top: var(--border-w-thin) solid transparent; 
 }
-
-.ui-calendar .is-today, .u-calendar .is-today { 
+[data-today] { 
   outline: var(--border-w) solid var(--c-fg); 
   outline-offset: -2px;
   font-weight: 700;
 }
-
-.ui-calendar .is-selected, .u-calendar .is-selected { 
+[data-selected] { 
   background: var(--c-fg); 
   color: var(--c-bg);
   font-weight: 800;
 }
-
-.ui-calendar .is-disabled, .u-calendar .is-disabled {
+[data-disabled], [data-unavailable] {
   color: #aaa;
   text-decoration: line-through;
-}
-
-.dark .ui-calendar .is-disabled, .dark .u-calendar .is-disabled {
-  color: #555;
 }
 
 /* Notification / Toast (UNotification) */
@@ -374,8 +370,8 @@ progress::-moz-progress-bar {
   border-bottom: var(--border-w-thin) solid var(--c-fg);
 }
 
-.ui-collapse-content, .ui-accordion-content {
-  padding: var(--rhythm-2);
+.dark [data-disabled], .dark [data-unavailable] {
+  color: #555;
 }
 
 /* Loading Screen */
@@ -392,7 +388,7 @@ progress::-moz-progress-bar {
   text-transform: uppercase;
   font-weight: 800;
   letter-spacing: .08em;
-}
+  }
 
 .loading-screen .spinner {
   border: var(--border-w-thin) solid var(--c-fg);
