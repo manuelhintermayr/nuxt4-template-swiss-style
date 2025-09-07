@@ -49,7 +49,7 @@
         <div ref="textSection" class="space-y-4">
             <h5 class="text-md font-medium text-gray-700 dark:text-gray-300">{{ $t('examples.mouseFollower.textEffects')
                 }}</h5>
-            <div class="p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+            <div class="p-4 bg-gray-50 dark:bg-gray-800 border-1 border-current">
                 <p class="text-gray-700 dark:text-gray-300 mb-2">
                     {{ $t('examples.mouseFollower.textDemo.intro') }}
                     <span :data-cursor-text="$t('examples.mouseFollower.cursorText.customMessage')"
@@ -213,7 +213,7 @@
             <h5 class="text-md font-medium text-gray-700 dark:text-gray-300">{{
                 $t('examples.mouseFollower.stickyEffects') }}
             </h5>
-            <div class="relative bg-gray-100 dark:bg-gray-800 rounded-lg p-8 overflow-hidden">
+            <div class="relative bg-gray-100 dark:bg-gray-800 rounded-lg p-8 overflow-hidden border-1 border-current bg-transparent">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div data-cursor-stick
                         class="card-tilt sticky-demo bg-primary-500 text-white rounded-full w-16 h-16 flex items-center justify-center font-bold cursor-pointer shadow-lg mx-auto">
@@ -221,7 +221,7 @@
                     </div>
 
                     <div data-cursor-stick="#stick-target"
-                        class="card-tilt text-center cursor-pointer p-4 rounded-lg bg-white dark:bg-gray-700 shadow-md">
+                        class="card-tilt text-center cursor-pointer p-4 rounded-lg bg-white dark:bg-gray-700 shadow-md border-1 border-current">
                         <p class="text-gray-700 dark:text-gray-300 mb-3">{{ $t('examples.mouseFollower.sticky.hover') }}
                         </p>
                         <div id="stick-target"

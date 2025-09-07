@@ -3,11 +3,11 @@
    ========================================================================== */
 
 .mf-cursor-text {
-  color: #111;
+  color: #eee;
 }
 
 .dark .mf-cursor-text {
-  color: #eee;
+  color: #111;
 }
 
 .mf-cursor:before {

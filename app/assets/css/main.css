@@ -165,11 +165,6 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
-  /* No global border radius */
-  * {
-    border-radius: 0 !important;
-  }
-
   /* Headings – Swiss poster typography */
   h1,
   h2,
