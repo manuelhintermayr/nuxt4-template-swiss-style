@@ -53,6 +53,15 @@
   border-radius: 0 !important;
 }
 
+button.bg-transparent {
+  border: 0 !important;
+}
+
+button.hover\:bg-transparent:hover {
+  background: transparent !important;
+  color: currentColor !important;
+}
+
 /* Hover inverted, aber Switches ausgenommen */
 .ui-button:hover,
 .ui-btn:hover,

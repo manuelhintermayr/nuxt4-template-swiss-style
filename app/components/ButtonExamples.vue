@@ -17,8 +17,8 @@
             </UButton>
             <UButton color="error" variant="outline" data-cursor-pointer>{{ $t('examples.buttons.outlineError') }}
             </UButton>
-            <UButton variant="ghost" data-cursor-pointer>{{ $t('examples.buttons.ghost') }}</UButton>
-            <UButton variant="link" data-cursor-pointer>{{ $t('examples.buttons.link') }}</UButton>
+            <UButton variant="ghost" class="bg-transparent" data-cursor-pointer>{{ $t('examples.buttons.ghost') }}</UButton>
+            <UButton variant="link" class="bg-transparent hover:bg-transparent" data-cursor-pointer>{{ $t('examples.buttons.link') }}</UButton>
         </div>
 
         <!-- Button Groups Section -->
