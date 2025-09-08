@@ -83,7 +83,15 @@ button:disabled {
   color: currentColor !important;
 }
 
-/* .hover\:bg-error\/10 {
+.text-error {
+  color: var(--ui-error) !important;
+}
+
+button.text-error {
+  border-color: var(--ui-error) !important;
+}
+
+.hover\:bg-error\/10 {
   &:hover {
     @media (hover: hover) {
       @supports (color: color-mix(in lab, red, red)) {
@@ -92,7 +100,7 @@ button:disabled {
       }
     }
   }
-} */
+}
 
 /* Inputs / selects / textareas – Swiss Style */
 .ui-input,
