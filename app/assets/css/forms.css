@@ -70,6 +70,30 @@ button:disabled {
   pointer-events: none;
 }
 
+/* Tailwind Utility Classes for Buttons */
+.bg-elevated,
+.bg-elevated\/50 {
+  background-color: var(--ui-bg-elevated) !important;
+  border: 0;
+}
+
+.hover\:bg-accented\/75:hover {
+  background-color:
+    color-mix(in oklab, var(--ui-bg-accented) 75%, transparent) !important;
+  color: currentColor !important;
+}
+
+/* .hover\:bg-error\/10 {
+  &:hover {
+    @media (hover: hover) {
+      @supports (color: color-mix(in lab, red, red)) {
+        background-color:
+          color-mix(in oklab, var(--ui-error) 10%, transparent) !important;
+      }
+    }
+  }
+} */
+
 /* Inputs / selects / textareas – Swiss Style */
 .ui-input,
 .ui-textarea,
