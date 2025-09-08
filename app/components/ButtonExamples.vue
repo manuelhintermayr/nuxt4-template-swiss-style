@@ -34,7 +34,7 @@
                 <template #header>
                     <h5 class="font-semibold">{{ $t('examples.buttons.buttonGroups.horizontal') }}</h5>
                 </template>
-                <div class="p-4">
+                <div class="p-1">
                     <UButtonGroup>
                         <UButton color="neutral" variant="outline" :label="$t('examples.buttons.buttonGroups.edit')"
                             icon="i-heroicons-pencil" />
