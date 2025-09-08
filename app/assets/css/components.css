@@ -161,7 +161,7 @@ nav[aria-label="Breadcrumb"] {
 }
 
 /* Tooltip / Toast */
-.ui-tooltip,
+[data-reka-popper-content-wrapper],
 .ui-toast {
   border: var(--border-w-thin) solid var(--c-fg) !important;
   background: var(--c-bg) !important;
