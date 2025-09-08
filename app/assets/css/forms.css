@@ -28,7 +28,8 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .04em;
-  color: #d00; /* klar rot für Swiss Warning */
+  color: #d00;
+  /* klar rot für Swiss Warning */
   margin-top: .25rem;
 }
 
@@ -78,7 +79,8 @@ input:not([type="checkbox"]):not([type="radio"]),
 select,
 textarea {
   border: var(--border-w) solid var(--c-fg) !important;
-  border-radius: 0 !important; /* kantig */
+  border-radius: 0 !important;
+  /* kantig */
   background: var(--c-bg) !important;
   color: var(--c-fg) !important;
   padding: var(--rhythm-2) !important;
@@ -167,7 +169,8 @@ textarea:disabled {
 }
 
 /* Switches */
-[role="switch"], [role="switch"]:hover {
+[role="switch"],
+[role="switch"]:hover {
   position: relative;
   display: inline-block;
   width: 2.25rem;
@@ -177,7 +180,8 @@ textarea:disabled {
   box-sizing: border-box;
 }
 
-[role="switch"] span, [role="switch"]:hover span {
+[role="switch"] span,
+[role="switch"]:hover span {
   position: absolute;
   top: 50%;
   left: 2px;
@@ -199,9 +203,9 @@ textarea:disabled {
 .ui-checkbox label,
 .ui-radio label,
 .ui-switch label,
-[role="checkbox"] + label,
-[role="radio"] + label,
-[role="switch"] + label {
+[role="checkbox"]+label,
+[role="radio"]+label,
+[role="switch"]+label {
   font-size: .95rem;
   text-transform: none;
   font-weight: 500;
@@ -223,7 +227,9 @@ textarea:disabled {
 }
 
 /* Slider / Range (URange) */
-.ui-range, .u-range, input[type="range"] {
+.ui-range,
+.u-range,
+input[type="range"] {
   appearance: none;
   width: 100%;
   background: transparent;

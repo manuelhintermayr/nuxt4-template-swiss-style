@@ -20,31 +20,39 @@ th {
 }
 
 /* Extended Table Styles (UTable) */
-.ui-table, .u-table, table[data-ui="table"] {
+.ui-table,
+.u-table,
+table[data-ui="table"] {
   border: var(--border-w) solid var(--c-fg);
   background: transparent;
   color: var(--c-fg);
   box-shadow: none;
 }
 
-.ui-table thead th, .u-table thead th, table[data-ui="table"] thead th {
+.ui-table thead th,
+.u-table thead th,
+table[data-ui="table"] thead th {
   text-transform: uppercase;
   font-weight: 800;
   border-bottom: var(--border-w) solid var(--c-fg);
   background: var(--c-bg);
 }
 
-.ui-table tbody td, .u-table tbody td, table[data-ui="table"] tbody td {
+.ui-table tbody td,
+.u-table tbody td,
+table[data-ui="table"] tbody td {
   border-top: var(--border-w-thin) solid var(--c-fg);
 }
 
-.ui-table tfoot th, .u-table tfoot th { 
-  border-top: var(--border-w) solid var(--c-fg); 
+.ui-table tfoot th,
+.u-table tfoot th {
+  border-top: var(--border-w) solid var(--c-fg);
 }
 
 /* Dense mode helper */
-.ui-table--dense td, .ui-table--dense th { 
-  padding: .4rem .5rem !important; 
+.ui-table--dense td,
+.ui-table--dense th {
+  padding: .4rem .5rem !important;
 }
 
 /* Legacy Nuxt UI Table support */

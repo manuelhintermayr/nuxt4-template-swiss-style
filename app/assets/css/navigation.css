@@ -17,20 +17,24 @@ header.nav {
 }
 
 /* Advanced Navigation & App Header */
-.navbar, .ui-nav, .app-header {
+.navbar,
+.ui-nav,
+.app-header {
   border-bottom: var(--border-w) solid var(--c-fg);
   background: var(--c-bg);
   color: var(--c-fg);
 }
 
-.navbar a, .ui-nav a {
+.navbar a,
+.ui-nav a {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: .05em;
   padding: .6rem .8rem;
 }
 
-.navbar a:hover, .ui-nav a:hover {
+.navbar a:hover,
+.ui-nav a:hover {
   background: var(--c-fg);
   color: var(--c-bg);
 }

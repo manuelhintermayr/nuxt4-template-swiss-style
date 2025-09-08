@@ -31,7 +31,7 @@
   /* ==========================================================================
      UI COLOR SYSTEM - Swiss Style Black/White
      ========================================================================== */
-  
+
   /* Swiss Style: Schwarz/Weiß für alle UI-Farben */
   --ui-color-primary-50: #fff;
   --ui-color-primary-100: #fff;
@@ -125,7 +125,8 @@
    ========================================================================== */
 
 /* Light mode (default) */
-:root, .light {
+:root,
+.light {
   --ui-primary: var(--ui-color-primary-500);
   --ui-secondary: var(--ui-color-secondary-500);
   --ui-success: var(--ui-color-success-500);
@@ -138,7 +139,7 @@
 .dark {
   --c-bg: #000000;
   --c-fg: #ffffff;
-  
+
   /* Dark mode UI aliases - use lighter variants */
   --ui-primary: var(--ui-color-primary-400);
   --ui-secondary: var(--ui-color-secondary-400);
@@ -213,7 +214,7 @@
     width: 10px;
     height: 10px;
   }
- 
+
   *::-webkit-scrollbar-thumb {
     background: var(--c-fg);
   }
@@ -257,27 +258,76 @@
     background: var(--c-fg);
     color: var(--c-bg);
   }
-  
+
   /* Tailwind radius overrides */
-  .rounded-none { border-radius: 0 !important; }
-  .rounded-sm { border-radius: 0 !important; }
-  .rounded { border-radius: 0 !important; }
-  .rounded-md { border-radius: 0 !important; }
-  .rounded-lg { border-radius: 0 !important; }
-  .rounded-xl { border-radius: 0 !important; }
-  .rounded-2xl { border-radius: 0 !important; }
-  .rounded-3xl { border-radius: 0 !important; }
-  .rounded-full { border-radius: 0 !important; }
-  
+  .rounded-none {
+    border-radius: 0 !important;
+  }
+
+  .rounded-sm {
+    border-radius: 0 !important;
+  }
+
+  .rounded {
+    border-radius: 0 !important;
+  }
+
+  .rounded-md {
+    border-radius: 0 !important;
+  }
+
+  .rounded-lg {
+    border-radius: 0 !important;
+  }
+
+  .rounded-xl {
+    border-radius: 0 !important;
+  }
+
+  .rounded-2xl {
+    border-radius: 0 !important;
+  }
+
+  .rounded-3xl {
+    border-radius: 0 !important;
+  }
+
+  .rounded-full {
+    border-radius: 0 !important;
+  }
+
   /* Tailwind shadow overrides */
-  .shadow-sm { box-shadow: none !important; }
-  .shadow { box-shadow: none !important; }
-  .shadow-md { box-shadow: none !important; }
-  .shadow-lg { box-shadow: none !important; }
-  .shadow-xl { box-shadow: none !important; }
-  .shadow-2xl { box-shadow: none !important; }
-  .shadow-inner { box-shadow: none !important; }
-  .shadow-none { box-shadow: none !important; }
+  .shadow-sm {
+    box-shadow: none !important;
+  }
+
+  .shadow {
+    box-shadow: none !important;
+  }
+
+  .shadow-md {
+    box-shadow: none !important;
+  }
+
+  .shadow-lg {
+    box-shadow: none !important;
+  }
+
+  .shadow-xl {
+    box-shadow: none !important;
+  }
+
+  .shadow-2xl {
+    box-shadow: none !important;
+  }
+
+  .shadow-inner {
+    box-shadow: none !important;
+  }
+
+  .shadow-none {
+    box-shadow: none !important;
+  }
 }
 
 /* ==========================================================================
@@ -285,18 +335,23 @@
    ========================================================================== */
 
 /* Focus states (generic hard focus) */
-a:focus-visible, button:focus-visible, [role="button"]:focus-visible,
-[role="menuitem"]:focus-visible, [role="tab"]:focus-visible,
-input:focus-visible, select:focus-visible, textarea:focus-visible {
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+[role="menuitem"]:focus-visible,
+[role="tab"]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
   outline: var(--ring-w) solid var(--c-fg);
   outline-offset: 2px;
 }
 
 /* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
-  * { 
-    transition: none !important; 
-    animation: none !important; 
+  * {
+    transition: none !important;
+    animation: none !important;
   }
 }
 

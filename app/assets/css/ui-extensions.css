@@ -10,15 +10,31 @@
    ========================================================================== */
 
 /* Basic Swiss styling applied to all component aliases */
-.u-button, .u-btn,
-.u-input, .u-textarea, .u-select,
-.u-card, .u-alert, .u-badge, .u-tag,
-.u-modal, .u-drawer, .u-sidebar,
-.u-navbar, .u-table, .u-tabs, .u-tab,
-.u-pagination, .u-breadcrumb,
-.u-calendar, .u-datepicker,
-.u-notification, .u-toast,
-.u-avatar, .u-accordion, .u-collapse {
+.u-button,
+.u-btn,
+.u-input,
+.u-textarea,
+.u-select,
+.u-card,
+.u-alert,
+.u-badge,
+.u-tag,
+.u-modal,
+.u-drawer,
+.u-sidebar,
+.u-navbar,
+.u-table,
+.u-tabs,
+.u-tab,
+.u-pagination,
+.u-breadcrumb,
+.u-calendar,
+.u-datepicker,
+.u-notification,
+.u-toast,
+.u-avatar,
+.u-accordion,
+.u-collapse {
   /* Ensure Swiss Style consistency */
   border-radius: 0 !important;
   font-family: var(--font-sans);
@@ -248,8 +264,8 @@ input[type="range"]::-moz-range-thumb:hover {
 }
 
 /* Comprehensive focus states */
-:where(a, button, [role="button"], [role="menuitem"], [role="tab"], 
-       input, select, textarea, [tabindex]):focus-visible {
+:where(a, button, [role="button"], [role="menuitem"], [role="tab"],
+  input, select, textarea, [tabindex]):focus-visible {
   outline: var(--ring-w) solid var(--c-fg);
   outline-offset: 2px;
   z-index: 10;
@@ -285,12 +301,14 @@ input[type="range"]::-moz-range-thumb:hover {
 }
 
 /* Disabled states */
-[disabled], [aria-disabled="true"] {
+[disabled],
+[aria-disabled="true"] {
   cursor: not-allowed;
   opacity: 0.5;
 }
 
-[disabled]:hover, [aria-disabled="true"]:hover {
+[disabled]:hover,
+[aria-disabled="true"]:hover {
   background: initial !important;
   color: initial !important;
 }
@@ -321,16 +339,16 @@ input[type="range"]::-moz-range-thumb:hover {
   [role="tablist"] {
     flex-direction: column;
   }
-  
+
   nav[aria-label="Pagination"] {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   nav[aria-label="Breadcrumb"] {
     flex-wrap: wrap;
   }
-  
+
   [role="menu"] {
     min-width: 100%;
     max-width: 100vw;
@@ -339,7 +357,9 @@ input[type="range"]::-moz-range-thumb:hover {
 
 /* High contrast mode support */
 @media (prefers-contrast: high) {
-  [role="tab"], [role="menuitem"], 
+
+  [role="tab"],
+  [role="menuitem"],
   nav[aria-label="Pagination"] a,
   nav[aria-label="Pagination"] button {
     border-width: var(--border-w);
