@@ -213,13 +213,14 @@
     width: 10px;
     height: 10px;
   }
-
+ 
   *::-webkit-scrollbar-thumb {
     background: var(--c-fg);
   }
 
   *::-webkit-scrollbar-track {
     background: var(--c-bg);
+    border-left: 2px solid var(--c-fg);
   }
 }
 

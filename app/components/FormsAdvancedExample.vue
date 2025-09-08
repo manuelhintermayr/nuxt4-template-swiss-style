@@ -200,7 +200,7 @@
                         <label class="text-sm font-medium">{{ t('examples.formsAdvanced.colorPicker.withPopover')
                         }}</label>
                         <UPopover>
-                            <UButton color="neutral" variant="outline" class="justify-start gap-2">
+                            <UButton color="neutral" variant="outline" class="justify-start gap-2 ml-4">
                                 <div class="w-4 h-4 rounded border border-gray-300"
                                     :style="{ backgroundColor: selectedColorPopover }"></div>
                                 {{ selectedColorPopover }}
