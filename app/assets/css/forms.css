@@ -62,6 +62,14 @@ button.hover\:bg-transparent:hover {
   color: currentColor !important;
 }
 
+[type="button"][aria-labelledby],
+[type="button"][aria-label="Increment"],
+[type="button"][aria-label="Decrement"]
+{
+  border: none;
+  padding: 1px;
+}
+
 /* Hover inverted, aber Switches ausgenommen */
 .ui-button:hover,
 .ui-btn:hover,
@@ -119,13 +127,16 @@ button.text-error {
 input:not([type="checkbox"]):not([type="radio"]),
 select,
 textarea {
-  border: var(--border-w) solid var(--c-fg) !important;
+  border: var(--border-w) solid var(--c-fg);
   border-radius: 0 !important;
   /* kantig */
-  background: var(--c-bg) !important;
   color: var(--c-fg) !important;
-  padding: var(--rhythm-2) !important;
   font-weight: 500;
+  box-shadow: none !important;
+}
+
+.inputNoBorder input {
+  border: none !important;
   box-shadow: none !important;
 }
 

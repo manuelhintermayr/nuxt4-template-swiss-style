@@ -41,7 +41,7 @@
                 <div class="p-4 space-y-4">
                     <div class="space-y-2">
                         <label class="text-sm font-medium">{{ t('examples.inputShowcase.inputTags.skills') }}:</label>
-                        <UInputTags v-model="skillTags"
+                        <UInputTags v-model="skillTags" class="inputNoBorder"
                             :placeholder="t('examples.inputShowcase.inputTags.placeholder')" />
                     </div>
                     <div class="flex flex-wrap gap-1">
