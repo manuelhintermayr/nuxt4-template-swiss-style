@@ -63,9 +63,15 @@ button.hover\:bg-transparent:hover {
 
 [type="button"][aria-labelledby],
 [type="button"][aria-label="Increment"],
-[type="button"][aria-label="Decrement"]
-{
+[type="button"][aria-label="Decrement"],
+[type="button"][aria-controls],
+[type="submit"][aria-controls] {
   border: none;
+}
+
+[type="button"][aria-labelledby],
+[type="button"][aria-label="Increment"],
+[type="button"][aria-label="Decrement"] {
   padding: 1px;
 }
 
