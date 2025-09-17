@@ -36,7 +36,7 @@
 /* Buttons – Nuxt UI + native */
 .ui-button,
 .ui-btn,
-[type="button"]:not([role="tab"]),
+[type="button"]:not([role="tab"]):not([role="menuitem"]),
 [type="submit"],
 .btn {
   --btn-bg: transparent;
@@ -73,6 +73,11 @@ button.hover\:bg-transparent:hover {
 [type="button"][aria-label="Increment"],
 [type="button"][aria-label="Decrement"] {
   padding: 1px;
+}
+
+[type="button"][role="menuitem"] span.iconify {
+  margin-right: 10px;
+  margin-bottom: -4px;
 }
 
 /* Hover inverted, aber Switches ausgenommen */
