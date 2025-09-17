@@ -140,7 +140,7 @@ nav[aria-label="Breadcrumb"] {
 }
 
 /* Modal / Drawer / Sidebar */
-.ui-modal,
+div[role="dialog"],
 .ui-drawer,
 .ui-sidebar {
   border: var(--border-w) solid var(--c-fg) !important;
