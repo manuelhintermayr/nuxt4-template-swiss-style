@@ -27,17 +27,6 @@
   background: transparent;
 }
 
-.ui-tab,
-.u-tab,
-[role="tab"] {
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: .02em;
-  border-bottom: var(--border-w-thin) solid transparent;
-  margin-right: .75rem;
-  padding: .5rem 0;
-}
-
 .ui-tab[aria-selected="true"],
 .u-tab[aria-selected="true"],
 [role="tab"][aria-selected="true"] {
@@ -495,6 +484,14 @@ progress::-moz-progress-bar {
   padding: var(--rhythm-2);
 }
 
-.swiss-divider {
-  border-top: var(--border-w) solid var(--c-fg);
+
+/* Carousel */
+div[aria-roledescription="carousel"] button[aria-label="Prev"] {
+  padding-left: 10px;
+  border-width: 1px;
+}
+
+div[aria-roledescription="carousel"] button[aria-label="Next"] {
+  padding-right: 10px;
+  border-width: 1px;
 }

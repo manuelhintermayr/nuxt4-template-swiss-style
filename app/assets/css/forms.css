@@ -36,7 +36,7 @@
 /* Buttons – Nuxt UI + native */
 .ui-button,
 .ui-btn,
-[type="button"],
+[type="button"]:not([role="tab"]),
 [type="submit"],
 .btn {
   --btn-bg: transparent;

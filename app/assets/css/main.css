@@ -243,10 +243,6 @@
     border-radius: 0 !important;
   }
 
-  .rounded-full {
-    border-radius: 0 !important;
-  }
-
   /* Tailwind shadow overrides */
   .shadow-sm {
     box-shadow: none !important;

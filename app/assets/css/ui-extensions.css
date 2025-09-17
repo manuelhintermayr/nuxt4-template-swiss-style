@@ -46,32 +46,8 @@
    ========================================================================== */
 
 /* Tabs with ARIA roles */
-[role="tablist"] {
-  border-bottom: var(--border-w) solid var(--c-fg);
-  display: flex;
-  gap: var(--rhythm-2);
-}
 
-[role="tab"] {
-  text-transform: uppercase;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  border-bottom: var(--border-w-thin) solid transparent;
-  padding: var(--rhythm-2) 0;
-  background: transparent;
-  cursor: pointer;
-  transition: none;
-}
 
-[role="tab"]:hover {
-  background: var(--c-fg);
-  color: var(--c-bg);
-}
-
-[role="tab"][aria-selected="true"] {
-  border-bottom-color: var(--c-fg);
-  font-weight: 900;
-}
 
 /* Pagination with ARIA */
 nav[aria-label="Pagination"] {
