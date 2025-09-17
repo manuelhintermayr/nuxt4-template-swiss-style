@@ -45,7 +45,6 @@
   border: var(--btn-bw) solid var(--btn-fg);
   background: var(--btn-bg);
   color: var(--btn-fg);
-  padding: var(--rhythm-2) var(--rhythm-3);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .02em;
