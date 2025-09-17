@@ -9,7 +9,10 @@
 
         <div class="space-y-6">
             <!-- Carousel -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.dataDisplay.carousel.title') }}</h5>
                 </template>
@@ -26,7 +29,10 @@
             </UCard>
 
             <!-- Collapsible -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.dataDisplay.collapsible.title') }}</h5>
                 </template>
@@ -61,7 +67,10 @@
             <!-- Interactive Menus -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Context Menu -->
-                <UCard class="card-tilt">
+                <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                    header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                    body: 'px-4 py-4 sm:px-6'
+                }">
                     <template #header>
                         <h5 class="font-semibold">{{ t('examples.dataDisplay.contextMenu.title') }}</h5>
                     </template>
@@ -76,7 +85,10 @@
                 </UCard>
 
                 <!-- Dropdown Menu -->
-                <UCard class="card-tilt">
+                <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                    header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                    body: 'px-4 py-4 sm:px-6'
+                }">
                     <template #header>
                         <h5 class="font-semibold">{{ t('examples.dataDisplay.dropdownMenu.title') }}</h5>
                     </template>
@@ -90,7 +102,10 @@
             </div>
 
             <!-- Drawer -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.dataDisplay.drawer.title') }}</h5>
                 </template>
@@ -129,7 +144,10 @@
             </UCard>
 
             <!-- Tree View -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.dataDisplay.tree.title') }}</h5>
                 </template>
@@ -139,7 +157,10 @@
             </UCard>
 
             <!-- Table -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.dataDisplay.table.title') }}</h5>
                 </template>
@@ -149,7 +170,10 @@
             </UCard>
 
             <!-- Timeline -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.dataDisplay.timeline.title') }}</h5>
                 </template>

@@ -9,7 +9,10 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <!-- Badges -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.navigation.badges.title') }}</h5>
                 </template>
@@ -41,7 +44,10 @@
             </UCard>
 
             <!-- Breadcrumb -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.navigation.breadcrumb.title') }}</h5>
                 </template>

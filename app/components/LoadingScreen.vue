@@ -1,41 +1,43 @@
 <template>
     <Teleport to="body">
         <Transition name="loading" @enter="onEnter" @leave="onLeave">
-            <div v-if="isLoading"
-                class="fixed inset-0 z-50 flex items-center justify-center bg-white dark:bg-gray-900 transition-all duration-500"
+            <div v-if="isLoading" class="fixed inset-0 z-50 bg-white dark:bg-black transition-all duration-500"
                 :class="{ 'opacity-100': isLoading, 'opacity-0': !isLoading }">
-                <div class="text-center space-y-8">
-                    <!-- Logo/Title -->
-                    <div class="space-y-4">
-                        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
-                            {{ t('loadingScreen.title') }}
-                        </h1>
-                        <p class="text-lg text-gray-600 dark:text-gray-400">
-                            {{ t('loadingScreen.subtitle') }}
-                        </p>
-                    </div>
-
-                    <!-- Loading Animation -->
-                    <div class="space-y-6">
-                        <!-- Progress Bar with Indeterminate Animation -->
-                        <div class="w-80 max-w-full mx-auto">
-                            <UProgress :value="undefined" color="primary" size="md" class="indeterminate-progress" />
+                <div class="swiss-grid w-full h-full flex items-center justify-center">
+                    <div class="text-center space-y-8">
+                        <!-- Logo/Title -->
+                        <div class="space-y-4">
+                            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+                                {{ t('loadingScreen.title') }}
+                            </h1>
+                            <p class="text-lg text-gray-600 dark:text-gray-400">
+                                {{ t('loadingScreen.subtitle') }}
+                            </p>
                         </div>
 
-                        <!-- Loading Text -->
-                        <div class="flex items-center justify-center space-x-2">
-                            <UIcon name="i-lucide-loader-circle" class="w-5 h-5 animate-spin text-primary-500" />
-                        </div>
-                    </div>
+                        <!-- Loading Animation -->
+                        <div class="space-y-6">
+                            <!-- Progress Bar with Indeterminate Animation -->
+                            <div class="w-80 max-w-full mx-auto">
+                                <UProgress :value="undefined" color="primary" size="md"
+                                    class="indeterminate-progress" />
+                            </div>
 
-                    <!-- Built with love and author link -->
-                    <div class="text-xs text-gray-400 dark:text-gray-600">
-                        {{ t('welcome.builtWith') }} ❤️ {{ t('welcome.by') }}
-                        <a href="https://github.com/manuelhintermayr" target="_blank" rel="noopener noreferrer"
-                            class="font-medium text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors duration-200"
-                            data-cursor-pointer>
-                            Manuel Hintermayr
-                        </a>
+                            <!-- Loading Text -->
+                            <div class="flex items-center justify-center space-x-2">
+                                <UIcon name="i-lucide-loader-circle" class="w-5 h-5 animate-spin text-primary-500" />
+                            </div>
+                        </div>
+
+                        <!-- Built with love and author link -->
+                        <div class="text-xs text-gray-400 dark:text-gray-600">
+                            {{ t('welcome.builtWith') }} ❤️ {{ t('welcome.by') }}
+                            <a href="https://github.com/manuelhintermayr" target="_blank" rel="noopener noreferrer"
+                                class="font-medium text-black dark:text-white transition-colors duration-200"
+                                data-cursor-pointer>
+                                Manuel Hintermayr
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

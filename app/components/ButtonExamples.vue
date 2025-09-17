@@ -17,8 +17,8 @@
             </UButton>
             <UButton color="error" variant="outline" data-cursor-pointer>{{ $t('examples.buttons.outlineError') }}
             </UButton>
-            <UButton variant="ghost" data-cursor-pointer>{{ $t('examples.buttons.ghost') }}</UButton>
-            <UButton variant="link" data-cursor-pointer>{{ $t('examples.buttons.link') }}</UButton>
+            <UButton variant="ghost" class="bg-transparent" data-cursor-pointer>{{ $t('examples.buttons.ghost') }}</UButton>
+            <UButton variant="link" class="bg-transparent hover:bg-transparent" data-cursor-pointer>{{ $t('examples.buttons.link') }}</UButton>
         </div>
 
         <!-- Button Groups Section -->
@@ -27,11 +27,14 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Horizontal Button Group -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ $t('examples.buttons.buttonGroups.horizontal') }}</h5>
                 </template>
-                <div class="p-4">
+                <div class="p-1">
                     <UButtonGroup>
                         <UButton color="neutral" variant="outline" :label="$t('examples.buttons.buttonGroups.edit')"
                             icon="i-heroicons-pencil" />
@@ -44,7 +47,10 @@
             </UCard>
 
             <!-- Vertical Button Group -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ $t('examples.buttons.buttonGroups.vertical') }}</h5>
                 </template>
@@ -61,7 +67,10 @@
             </UCard>
 
             <!-- Input with Button -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ $t('examples.buttons.buttonGroups.input') }}</h5>
                 </template>

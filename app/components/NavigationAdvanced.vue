@@ -9,7 +9,10 @@
 
         <div class="space-y-6">
             <!-- Tabs -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.navigationAdvanced.tabs.title') }}</h5>
                 </template>
@@ -19,7 +22,10 @@
             </UCard>
 
             <!-- Navigation Menu -->
-            <UCard class="card-tilt overflow-visible">
+            <UCard class="card-tilt overflow-visible border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.navigationAdvanced.navigationMenu.title') }}</h5>
                 </template>
@@ -29,7 +35,10 @@
             </UCard>
 
             <!-- Pagination -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.navigationAdvanced.pagination.title') }}</h5>
                 </template>
@@ -49,7 +58,10 @@
             </UCard>
 
             <!-- Stepper -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.navigationAdvanced.stepper.title') }}</h5>
                 </template>
@@ -71,7 +83,10 @@
             <!-- Link Examples -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Links -->
-                <UCard class="card-tilt">
+                <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                     <template #header>
                         <h5 class="font-semibold">{{ t('examples.navigationAdvanced.link.title') }}</h5>
                     </template>
@@ -92,7 +107,10 @@
                 </UCard>
 
                 <!-- Modal & Slideover -->
-                <UCard class="card-tilt">
+                <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                     <template #header>
                         <h5 class="font-semibold">{{ t('examples.navigationAdvanced.overlays.title') }}</h5>
                     </template>

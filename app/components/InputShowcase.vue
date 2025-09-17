@@ -9,7 +9,10 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Input Number -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.inputShowcase.inputNumber.title') }}</h5>
                 </template>
@@ -28,14 +31,17 @@
             </UCard>
 
             <!-- Input Tags -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.inputShowcase.inputTags.title') }}</h5>
                 </template>
                 <div class="p-4 space-y-4">
                     <div class="space-y-2">
                         <label class="text-sm font-medium">{{ t('examples.inputShowcase.inputTags.skills') }}:</label>
-                        <UInputTags v-model="skillTags"
+                        <UInputTags v-model="skillTags" class="inputNoBorder"
                             :placeholder="t('examples.inputShowcase.inputTags.placeholder')" />
                     </div>
                     <div class="flex flex-wrap gap-1">
@@ -47,7 +53,10 @@
             </UCard>
 
             <!-- Pin Input -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.inputShowcase.pinInput.title') }}</h5>
                 </template>
@@ -66,7 +75,10 @@
             </UCard>
 
             <!-- Select & SelectMenu -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.inputShowcase.select.title') }}</h5>
                 </template>
@@ -86,7 +98,10 @@
             </UCard>
 
             <!-- Advanced Input -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.inputShowcase.advancedInput.title') }}</h5>
                 </template>
@@ -104,7 +119,10 @@
             </UCard>
 
             <!-- Kbd -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.inputShowcase.kbd.title') }}</h5>
                 </template>
@@ -134,7 +152,10 @@
         <!-- Additional Row for Textarea and Tooltip -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Textarea -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.inputShowcase.textarea.title') }}</h5>
                 </template>
@@ -156,7 +177,10 @@
             </UCard>
 
             <!-- Tooltip -->
-            <UCard class="card-tilt">
+            <UCard class="card-tilt border-1 border-current bg-transparent" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                body: 'px-4 py-4 sm:px-6'
+            }">
                 <template #header>
                     <h5 class="font-semibold">{{ t('examples.inputShowcase.tooltip.title') }}</h5>
                 </template>

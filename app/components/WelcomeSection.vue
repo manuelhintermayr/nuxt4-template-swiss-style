@@ -11,10 +11,10 @@
         <!-- Author and GitHub Information -->
         <div class="mt-8 space-y-4">
             <div class="text-center">
-                <p class="text-sm text-gray-500 dark:text-gray-400">
+                <p class="text-sm text-black dark:text-white">
                     {{ $t('welcome.builtWith') }} ❤️ {{ $t('welcome.by') }}
                     <a href="https://github.com/manuelhintermayr" target="_blank" rel="noopener noreferrer"
-                        class="font-medium text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 transition-colors duration-200"
+                        class="font-medium transition-colors duration-200"
                         data-cursor-pointer>
                         Manuel Hintermayr
                     </a>
@@ -22,10 +22,10 @@
             </div>
 
             <div class="flex justify-center items-center space-x-4 text-sm text-gray-600 dark:text-gray-400">
-                <a href="https://github.com/manuelhintermayr/nuxt4-template" target="_blank" rel="noopener noreferrer"
-                    class="inline-flex items-center space-x-2 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+                <a href="https://github.com/manuelhintermayr/nuxt4-template-swiss-style" target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center space-x-2 transition-colors duration-200 text-black dark:text-white"
                     :data-cursor-text="$t('welcome.clickHere')">
-                    <UIcon name="i-heroicons-code-bracket" class="w-4 h-4" />
+                    <UIcon name="i-heroicons-code-bracket" class="w-4 h-4 text-black dark:text-white" />
                     <span>{{ $t('welcome.repository') }}</span>
                 </a>
 

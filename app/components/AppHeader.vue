@@ -1,10 +1,10 @@
 <template>
-    <header class="bg-white dark:bg-gray-800 shadow">
+    <header class="border-b-2 border-current">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-6">
                 <div class="flex items-center">
-                    <UIcon name="i-heroicons-rocket-launch" class="w-8 h-8 text-primary-500 mr-3" />
-                    <h1 ref="brandTitle" class="text-3xl font-bold text-gray-900 dark:text-white cursor-pointer">
+                    <UIcon name="i-heroicons-rocket-launch" class="w-8 h-8 text-black dark:text-white mr-3" />
+                    <h1 ref="brandTitle" class="text-3xl font-bold text-black dark:text-white uppercase tracking-wide">
                         {{ $t('header.title') }}
                     </h1>
                 </div>
@@ -36,7 +36,7 @@ onMounted(() => {
     // Add magnetic effect to interactive elements
     if (utils?.addMagneticEffect) {
         nextTick(() => {
-            const elements = [brandTitle.value, darkModeButton.value].filter((el): el is HTMLElement => el !== undefined)
+            const elements = [darkModeButton.value].filter((el): el is HTMLElement => el !== undefined)
             if (elements.length > 0) {
                 utils.addMagneticEffect(elements)
             }

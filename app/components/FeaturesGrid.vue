@@ -1,18 +1,18 @@
 <template>
     <div ref="gridContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <FeatureCard ref="featureCards" :title="$t('features.nuxt4.title')"
-            :description="$t('features.nuxt4.description')" icon="i-heroicons-sparkles" icon-color="text-yellow-500" />
+            :description="$t('features.nuxt4.description')" icon="i-heroicons-sparkles" icon-color="text-black dark:text-white" />
 
         <FeatureCard ref="featureCards" :title="$t('features.nuxtUI.title')"
             :description="$t('features.nuxtUI.description')" icon="i-heroicons-paint-brush"
-            icon-color="text-blue-500" />
+            icon-color="text-black dark:text-white" />
 
         <FeatureCard ref="featureCards" :title="$t('features.mouseFollower.title')"
             :description="$t('features.mouseFollower.description')" icon="i-heroicons-cursor-arrow-rays"
-            icon-color="text-green-500" data-cursor-stick />
+            icon-color="text-black dark:text-white" data-cursor-stick />
 
         <FeatureCard ref="featureCards" :title="$t('features.darkMode.title')"
-            :description="$t('features.darkMode.description')" icon="i-heroicons-moon" icon-color="text-indigo-500"
+            :description="$t('features.darkMode.description')" icon="i-heroicons-moon" icon-color="text-black dark:text-white"
             :has-toggle="true" />
     </div>
 </template>

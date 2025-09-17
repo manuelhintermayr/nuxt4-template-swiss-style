@@ -1,18 +1,20 @@
-# Nuxt 4 Template
+# Nuxt 4 Template – Swiss Style
 
-A modern, production-ready Nuxt 4 starter template with comprehensive configurations and internationalization support. Perfect for building modern web applications with cutting-edge technologies.
+A Nuxt 4 template with nuxt/ui (including Tailwind CSS) and i18n support in the Swiss Style (International Typographic Style). Modern, production-ready starter for web applications with a focus on clarity, grid, and internationalization.
 
 ![Preview](public/media/preview.jpg)
 
-**🌐 Live Demo:** [http://projects.manuelhintermayr.com/nuxt4-template](http://projects.manuelhintermayr.com/nuxt4-template)
+**🌐 Live Demo:** [http://projects.manuelhintermayr.com/nuxt4-template-swiss-style](http://projects.manuelhintermayr.com/nuxt4-template-swiss-style)
 
 **Developed by:** [Manuel Hintermayr](https://github.com/manuelhintermayr)  
-**Repository:** https://github.com/manuelhintermayr/nuxt4-template
+**Repository:** [https://github.com/manuelhintermayr/nuxt4-template-swiss-style](https://github.com/manuelhintermayr/nuxt4-template-swiss-style)
+_Based on [nuxt4-template](https://github.com/manuelhintermayr/nuxt4-template)_
 
 ## 🚀 Features
 
 - ⚡️ **Nuxt 4** - Latest version with improved performance and new features
 - 🎨 **Nuxt UI** - Modern UI components based on Tailwind CSS and Headless UI
+- 🖼️ **Swiss Style** - Layout and design inspired by the International Typographic Style (Swiss Style)
 - 🌍 **Internationalization** - Full i18n support with @nuxtjs/i18n
 - 🌙 **Dark Mode** - Built-in dark/light mode toggle
 - 📱 **Responsive Design** - Mobile-first approach
@@ -35,6 +37,7 @@ A modern, production-ready Nuxt 4 starter template with comprehensive configurat
 ### UI & Styling
 - **[Nuxt UI](https://ui.nuxt.com/)** - Fully styled and customizable components
 - **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **Swiss Style Principles** - Grid-based layouts, clarity, and typographic hierarchy following the International Typographic Style
 - **All UI components implemented based on [Nuxt UI Documentation](https://ui.nuxt.com/components/app)**
 
 ### Animation & Effects
@@ -60,8 +63,8 @@ A modern, production-ready Nuxt 4 starter template with comprehensive configurat
 
 ```bash
 # Clone the repository
-git clone https://github.com/manuelhintermayr/nuxt4-template.git
-cd nuxt4-template
+git clone https://github.com/manuelhintermayr/nuxt4-template-swiss-style.git
+cd nuxt4-template-swiss-style
 
 # Install dependencies
 npm install
@@ -107,7 +110,7 @@ npm run preview                   # Preview production build
 ## 🏗️ Project Structure
 
 ```
-nuxt4-template/
+nuxt4-template-swiss-style/
 ├── app/
 │   ├── app.config.ts           # App configuration
 │   ├── app.vue                 # Root application component
