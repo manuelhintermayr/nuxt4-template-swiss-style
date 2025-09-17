@@ -35,7 +35,6 @@ table[data-ui="table"] thead th {
   text-transform: uppercase;
   font-weight: 800;
   border-bottom: var(--border-w) solid var(--c-fg);
-  background: var(--c-bg);
 }
 
 .ui-table tbody td,

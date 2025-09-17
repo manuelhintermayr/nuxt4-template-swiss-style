@@ -357,9 +357,9 @@ progress::-moz-progress-bar {
   font-weight: 700;
 }
 
-[data-selected] {
-  background: var(--c-fg);
-  color: var(--c-bg);
+button[data-selected] {
+  background: var(--c-fg) !important;
+  color: var(--c-bg) !important;
   font-weight: 800;
 }
 
