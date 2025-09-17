@@ -151,7 +151,7 @@ div[role="dialog"],
 
 /* Tooltip / Toast */
 [data-reka-popper-content-wrapper],
-.ui-toast {
+li[data-reka-collection-item] {
   border: var(--border-w-thin) solid var(--c-fg) !important;
   background: var(--c-bg) !important;
   color: var(--c-fg) !important;
