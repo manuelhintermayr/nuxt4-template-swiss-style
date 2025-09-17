@@ -1,6 +1,9 @@
 # Nuxt 4 Template – Swiss Style
 
 A Nuxt 4 template with nuxt/ui (including Tailwind CSS) and i18n support in the Swiss Style (International Typographic Style). Modern, production-ready starter for web applications with a focus on clarity, grid, and internationalization.
+
+![Preview](public/media/preview.jpg)
+
 **🌐 Live Demo:** [http://projects.manuelhintermayr.com/nuxt4-template-swiss-style](http://projects.manuelhintermayr.com/nuxt4-template-swiss-style)
 
 **Developed by:** [Manuel Hintermayr](https://github.com/manuelhintermayr)  
