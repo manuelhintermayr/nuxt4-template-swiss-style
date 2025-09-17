@@ -66,7 +66,7 @@ button.hover\:bg-transparent:hover {
 [type="button"][aria-label="Decrement"],
 [type="button"][aria-controls]:not([aria-expanded="false"]),
 [type="submit"][aria-controls],
-[type="button"][data-reka-collection-item] {
+[type="button"][data-reka-collection-item]:not([aria-checked]) {
   border: none !important;
 }
 
