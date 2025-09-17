@@ -34,8 +34,8 @@
                 </UCard>
 
                 <!-- Subtle Card -->
-                <UCard variant="subtle" class="card-tilt border-1 border-current bg-transparent" :ui="{
-                header: 'px-4 py-4 sm:px-6 border-b-1 border-current',
+                <UCard variant="subtle" class="card-tilt border-1" :ui="{
+                header: 'px-4 py-4 sm:px-6 border-b-1',
                 body: 'px-4 py-4 sm:px-6'
             }">
                     <template #header>
