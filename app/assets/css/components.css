@@ -160,6 +160,11 @@ li[data-reka-collection-item] {
   font-weight: 700;
 }
 
+button[aria-label="Close"]
+{
+  border-width: 1px !important;
+}
+
 /* Extended Tooltip (UTooltip) */
 .ui-tooltip,
 .u-tooltip,
@@ -380,6 +385,7 @@ button[data-selected] {
 .u-toast {
   border: var(--border-w) solid var(--c-fg) !important;
   background: var(--c-bg) !important;
+
   color: var(--c-fg) !important;
   text-transform: uppercase;
   font-weight: 800;
