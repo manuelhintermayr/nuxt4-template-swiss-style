@@ -64,9 +64,10 @@ button.hover\:bg-transparent:hover {
 [type="button"][aria-labelledby],
 [type="button"][aria-label="Increment"],
 [type="button"][aria-label="Decrement"],
-[type="button"][aria-controls],
-[type="submit"][aria-controls] {
-  border: none;
+[type="button"][aria-controls]:not([aria-expanded="false"]),
+[type="submit"][aria-controls],
+[type="button"][data-reka-collection-item] {
+  border: none !important;
 }
 
 [type="button"][aria-labelledby],
