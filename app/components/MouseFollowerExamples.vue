@@ -106,7 +106,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div data-cursor="-inverse"
                     class="card-tilt p-4 bg-gray-900 text-white rounded-lg text-center cursor-pointer relative overflow-hidden">
-                    <UIcon name="i-heroicons-moon" class="w-6 h-6 mx-auto mb-2 text-black dark:text-white" />
+                    <UIcon name="i-heroicons-moon" class="w-6 h-6 mx-auto mb-2 text-white" />
                     <p class="text-sm font-medium">{{ $t('examples.mouseFollower.states.inverse') }}</p>
                     <p class="text-xs text-gray-300 mt-1">{{ $t('examples.mouseFollower.states.inverseDesc') }}</p>
 
