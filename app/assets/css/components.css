@@ -285,7 +285,7 @@ div[aria-valuemax] {
   border-radius: 0;
 }
 
-div[aria-valuemax] div[data-state="loading"] {
+div[aria-valuemax] div[data-state] {
   border-radius: 0;
 }
 
