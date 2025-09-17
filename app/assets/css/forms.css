@@ -99,12 +99,6 @@ button:disabled {
 }
 
 /* Tailwind Utility Classes for Buttons */
-.bg-elevated,
-.bg-elevated\/50 {
-  background-color: var(--ui-bg-elevated) !important;
-  border: 0;
-}
-
 .hover\:bg-accented\/75:hover {
   background-color:
     color-mix(in oklab, var(--ui-bg-accented) 75%, transparent) !important;
