@@ -251,6 +251,10 @@ textarea:disabled {
   transform: translateY(-50%) translateX(0);
 }
 
+[role="switch"] span[data-state] {
+  border-radius: 0 !important;
+}
+
 [role="switch"][data-state="checked"] span {
   transform: translateY(-50%) translateX(-0.1rem);
 }
